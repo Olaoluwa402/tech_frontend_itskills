@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: rgba(3, 3, 37, 0.928);
+  width: 90%;
+  height: 115vh;
+  margin: 3% auto;
+  padding: 20px 50px ;
+  margin-bottom: 40px;
+}
+
+.main-div{
+  margin: 10px auto;
+  padding: 10px 30px;
+}
+
+img{
+  width: 100%;
+}
+
+.brandWord{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brandWord, .LOGO h2 {
+ color: white;
+ font-size: 20px;
+ margin-bottom: 40px;
+ margin-top: 5px;
+ font-family:serif;
+}
+
+.Brandcontent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.brandWord, .Brandcontent h1{
+  color: #fff;
+  font-size: 25px;
+  font-family:serif;
+  padding-bottom: 10px;
+}
+
+.brandWord, .Brandcontent p{
+  color: #fff;
+  font-size: 13px;
+  line-height: 25px;
+  font-family: sans-serif; 
+}
+ 
+ .getHelp input{
+ display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  margin-bottom: 20px;
+} 
+
+.brandWord, .getHelp h5{
+  color: #fff;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-family:serif;
+}
+
+.getHelp .helpInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.helpInfo button{
+  background-color: rgb(20, 20, 226);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 13px;
+   padding: 12px 20px;
+   font-family: sans-serif;  
+}
+
+.getHelp input{
+  padding: 10px 40px;
+  font-family: sans-serif;
+}
+
+.imgprofile img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+}
+
+.imgprofile{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.profileDetails{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: #Ffff;
+  font-size: 13px;
+  font-family: sans-serif;
+  
+}
+
+@media(min-width:1000px){
+   
+ .main-div{
+  width: 800px;
+  margin-bottom: 20%;
+  padding:0px 15px;
+} 
+
+
+.container{
+  height: 70vh;
+}
+
+.brandWord, .LOGO h2 {
+  margin-top: 60px;
+ }
+
+  .input{
+    flex-direction: row;
+    justify-content: flex-start;
+  } 
+  .brandWords{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .getHelp .helpInfo{
+    flex-direction: row;
+  }
+
+}

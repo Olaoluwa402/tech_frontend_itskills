@@ -1,0 +1,16 @@
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 100px;
+}
+
+.grid-item{
+  /* height: 100px;
+  width: 200px; */
+  margin: 20px;
+  background-color: aquamarine;
+}
+
+.grid-item-1{
+  grid-row: 2/4;
+}
