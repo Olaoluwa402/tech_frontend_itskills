@@ -18,9 +18,27 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.advert {
+    background-color: #2860f1;
+    color: white;
+    text-align: center;
+    height: 40px;
+    align-items: center;
+}
+
+.advert a{
+    color: white;
+    text-decoration: underline;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
 .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -131,6 +149,7 @@ h3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
+
 .image {
     border-radius: 18px 18px 0 0;
     background-image: linear-gradient(#59e2e0, #2860f1);
@@ -152,21 +171,50 @@ h2 {
     padding-left: 20px;
 }
 
-.network{
+.network, .support{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.agency, .partner{
+.agency, .partner, .paid, .free{
     display: flex;
     flex-direction: column;
     width: 300px;
     height: 250px;
     border-radius: 18px;
     margin: 10px auto;
+    padding-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.up-to-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=email], #subscribe{
+    width: 280px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+input[type=email] {
+    border-radius: 8px;
+}
+
+#subscribe {
+    background-color: #BFFDE7;
+    color: black;
 }
 
 @media (min-width: 680px) {
@@ -185,13 +233,22 @@ h2 {
         height: 200px;
     }
 
-    .network{
+    .network, .support{
         display: flex;
         flex-direction: row;
     }
 
-    .agency, .partner{
+    .agency, .partner, .paid, .free{
         width: 320px;
+    }
+
+    .mail {
+        flex-direction: row;
+    }
+
+    #subscribe {
+        width: 120px;
+        margin-left: 10px;
     }
 }
 
@@ -246,7 +303,8 @@ h2 {
     }
 
     h3 {
-        margin-left: 80px;
+        margin-left: 40px;
+        margin-top: 20px;
     }
 
     .request {
@@ -254,9 +312,9 @@ h2 {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 900px;
+        width: 1000px;
         height: 300px;
-        background-image: linear-gradient(to top right, white 60%, #2860f1);;
+        background-image: linear-gradient(to top right, white 70%, #2860f1);
     }
 
     .request img {
@@ -274,12 +332,28 @@ h2 {
         background-image: none
     }
 
-    .network{
+    .network, .support{
         display: flex;
         flex-direction: row;
     }
 
-    .agency, .partner{
-        width: 400px;
+    .agency, .partner, .paid, .free{
+        width: 450px;
+        padding-left: 4px;
+    }
+}
+
+@media (min-width: 1175px) {
+    .request {
+        width: 1300px;
+    }
+
+    h3 {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+    .agency, .partner, .paid, .free{
+        width: 600px;
     }
 }

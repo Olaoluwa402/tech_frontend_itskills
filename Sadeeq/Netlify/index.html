@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/7073472dff.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js" integrity="sha512-36dJpwdEm9DCm3k6J0NZCbjf8iVMEP/uytbvaiOKECYnbCaGODuR4HSj9JFPpUqY98lc2Dpn7LpyPsuadLvTyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Netlify</title>
 </head>
 <body>
+    <div class="advert">
+        <p>Netlify acquires Gatsby Inc <a href="">Learn more</a></p>
+    </div>
     <header>
         <nav class="navigation">
             <div class="logo_bar">
@@ -80,6 +86,7 @@
         <h3>Partner Network</h3>
         <div class="network">
             <div class="agency">
+                <i class="fa-light fa-star"></i>
                 <h2>Agency Partner Program</h2>
                 <p>Grow your digital practice with access to exclusive resources,
                 programs, and connections.</p>
@@ -88,6 +95,7 @@
             </div>
 
             <div class="partner">
+                <i class="fa-regular fa-plug"></i>
                 <h2>Technology Partner Program</h2>
                 <p>Benefit from development support, 
                 marketing resources and more to connect, build and grow demand, together.</p>
@@ -99,14 +107,16 @@
 
     <section>
         <h3>SUPPORT</h3>
-        <div>
-            <div>
+        <div class="support">
+            <div class="paid">
+                <i class="fa-regular fa-crown"></i>
                 <h2>Paid support</h2>
                 <p>For all customers on our paying Pro+ plans, email support is available.</p>
                 <input type="button" value="Contact support">
             </div>
 
-            <div>
+            <div class="free">
+                <i class="fa-light fa-tire-flat"></i>
                 <h2>Free support</h2>
                 <p>For all customers on our starter plan, browse Netlify’s 
                 robust documentation, guides, and forums.</p>
@@ -115,12 +125,12 @@
         </div>
     </section>
 
-    <section>
-        
+    <section class="up-to-date">
+        <img src="./images/deploy1.png" alt="" width="30px" height="30px">
         <p>Stay up to date with all Jamstack & Netlify news</p>
-        <div>
+        <div class="mail">
             <input type="email" placeholder="Email address">
-            <input type="button" value="Subscribe">
+            <input type="button" value="Subscribe" id="subscribe">
         </div>
     </section>
 

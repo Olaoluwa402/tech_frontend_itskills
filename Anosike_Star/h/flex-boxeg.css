@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+    background-color: #140024;
+    height: 50px;
+    justify-content: space-between;
+    padding: 10px 40px;
+    text-decoration: none;   
+    list-style-type: none; 
+}
+
+.flex-item{
+    display: flex;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.flex-container{
+    width: 980vh%;
+    background-color:#242145;
+    display: flex;
+    padding: 50px;
+    list-style: none;
+    height: 1px;
+    text-decoration: none;
+    padding: 45px 45px
+    
+}
+.flex-container {
+    justify-content: space-between;
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+.flex-container ul li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    padding: 2px 40px;
+}
+.container ul li{
+color:white;
+text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.Skills {
+    justify-content: space-between;
+    margin: 20px 20px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,20 @@
+.container {
+  min-height: 980px;
+}
+.advert {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+}
+.navigation {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: magenta;
+}
+
+.slider {
+  height: calc(100vh - 150px);
+  background-color: black;
+}
