@@ -1,0 +1,283 @@
+/* Mobile first design */
+/* version 1.0.1 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header h2 {
+    font-size: medium;
+}
+ 
+li {
+    padding-right: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav ul {
+    list-style: none;
+    display: inline-flex;
+    /* padding-right: 100px; */
+    font-size: xx-small;
+}
+
+.container1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/OYENIJI/HTML_BASIC/images/pexels-ann-poan-5797997.jpg);
+    max-width: 100%;
+    height: 300px;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.creative {
+    font-size: small;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.container2 {
+    background-color: rgb(238, 237, 237);
+    width: 100%;
+    height: 600px;
+    padding-top: 15px;
+    display: inline-block;
+    /* text-align: justify; */
+}
+
+.container2 h3 {
+    color: blue;
+    /* text-align: center; */
+}
+
+
+.whatwedo {
+    width: 160px;
+    display: inline-block;
+    margin: 0 auto;
+    padding-right: 5px; 
+    align-items: center;
+    text-align: center;
+}
+
+.whatwedo i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 9px;
+    /* display: inline-block; */
+    background-color: rgba(63, 63, 236, 0.822);
+}
+
+.whatwedo p {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.container3 {
+    background-color: rgb(201, 198, 198);
+    width: 100%;
+    height: 1300px;
+    padding-top: 15px;
+}
+
+#viewmore {
+    display: inline-block;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+    margin-left: 30px;
+    /* justify-content: */
+}
+
+#side_laptop {
+    margin-left: 30px;
+    padding-top: 25px;
+}
+
+.bottomcontainer {
+    display: inline-block;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.bottomcontainer p {
+    font-size: x-small;
+}
+
+.container4 {
+    display: inline-block;
+    padding-top: 40px;
+    /* justify-content: center; */
+    background-color: rgb(204, 204, 204);
+}
+
+.container4 img {
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    /* height: 80px; */
+}
+
+.subtext {
+    /* padding-left: 20px; */
+    font-size: x-small;
+    margin-left: 10px;
+}
+
+.maintext {
+    font-weight: bold;
+    /* border-bottom: 15px; */
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-color: white;
+}
+
+.maintext a {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* The responsive part of the site for desktop */
+@media only screen and (min-width: 992px) {
+    header h2 {
+        font-size: x-large;
+    }
+
+    .nav ul {
+        font-size: medium;
+    }
+
+    .creative {
+        font-size: large;
+    }
+
+    .wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 960px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .container2 {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;    
+        padding-top: 20px;
+        /* padding-right: 100px; */
+        /* padding-left: 100px; */
+        /* margin: 10px; */
+    }
+    
+    .container2 h3 {
+        color: blue;
+    }
+    
+    .whatwedo {
+        width: 190px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .context{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    
+    }
+    
+    #viewmore p {
+        width: 300px;
+    }
+
+    .container3 {
+        height: 550px;
+    }
+    
+    .bottomcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .bottomcontainer p, .bottomcontainer h3 {
+        text-align: center;
+    }
+    
+    .bottomcontainer p {
+        font-size: x-small;
+    }
+    
+    .thenews {
+        border: 100%;
+        padding-left: 30px;
+        height: 180px;
+        background-color: white;
+        overflow: hidden;
+        padding-right: 40px;
+    }
+    
+    .lastnews {
+        color: white;
+        border: 100%;
+        width: 180px;
+        height: 180px;
+        background-color: black;
+        overflow: hidden;
+    }
+    
+    .lastnews img {
+        height: 100px;
+        width: 100px;
+        padding-left: 7px;
+    }
+    
+    .container4 {
+        display: flex;
+        padding-top: 40px;
+        justify-content: center;
+    }
+    
+    .container4 img {
+        width: 100%;
+        height: 80px;
+        padding-top: 0px;
+        /* height: 80px; */
+    }
+
+    .container4 a {
+        margin: 10px;
+    }
+    
+    
+    .words {
+        width: 300px;
+        border: 1px;
+        border-style: hidden;
+        margin: 10px;
+        background-color: white;
+    }
+    
+}
+
