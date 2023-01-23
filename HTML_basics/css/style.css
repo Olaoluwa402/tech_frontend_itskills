@@ -1,0 +1,83 @@
+/* simple selectors */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* globals */
+img {
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* end do f global */
+
+body {
+  background-color: black;
+  background-image: url("../images/about.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#active {
+  color: blueviolet;
+}
+
+.about {
+  color: green;
+}
+
+a {
+  font-size: 30px;
+}
+
+/* group selector */
+#active,
+.about {
+  font-size: 30px;
+}
+
+dd.first_dd {
+  color: rgba(0, 0, 255);
+  border: 3px dotted chocolate;
+  /* margin: 100px 40px 100px 40px; */
+  /* margin: 100px 50px; */
+  margin: 100px 50px 100px;
+  padding: 100px 50px;
+}
+dd.first_dd:hover {
+  color: rgba(0, 0, 255, 0.4);
+}
+
+form {
+  height: 580px;
+  /* width: 580px; */
+  width: 100%;
+  margin: 10px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+@media (min-width: 520px) {
+  form {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/* -----Ed of simple selectors */
+
+/* combination selectors */
+
+/*---End of combination selectors -----*/
