@@ -1,11 +1,9 @@
-
 /* the universal selector to reset all elements to zero */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 /* the header-section */
 header {
@@ -24,7 +22,6 @@ header {
   font-family: sans-serif;
 }
 
-
 /* style the nav properties */
 
 ul {
@@ -34,11 +31,9 @@ ul {
   gap: 30px;
 }
 
-
 li {
   list-style: none;
 }
-
 
 li a {
   text-decoration: none;
@@ -47,8 +42,6 @@ li a {
   font-weight: 500;
   font-family: serif;
 }
-
-
 
 .digits {
   margin-left: 20px;
@@ -67,14 +60,13 @@ li a {
 }
 /* use positioning to put position the words perfectly in the background image */
 
-
 .creative-words {
   position: absolute;
   transform: translate(-50%);
   top: 50%;
   left: 50%;
 }
-.creative-words h2{
+.creative-words h2 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -83,7 +75,7 @@ li a {
   color: rgb(227, 226, 224);
 }
 
-.creative-words p{
+.creative-words p {
   display: inline-block;
   padding-bottom: 30px;
   line-height: 1.5;
@@ -96,7 +88,6 @@ li a {
 /* style the next section */
 
 /* information section */
-
 
 .information-div {
   background-color: rgba(219, 218, 218);
@@ -166,7 +157,7 @@ li a {
 
 .words-img h5 {
   font-weight: 600;
-  padding:20px  10px;
+  padding: 20px 10px;
   font-family: san-serif;
 }
 
@@ -201,7 +192,6 @@ li a {
   font-size: 12px;
   padding-bottom: 10px;
 }
-
 
 /* the footer section */
 .footer-div {
