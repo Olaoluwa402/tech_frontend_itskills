@@ -1,18 +1,19 @@
-
 /* the universal selector to reset all elements to zero */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 
+
 /* the header-section */
 header {
   display: flex;
   flex-direction: row;
-  gap: 40rem;
-  background-color: white;
+  gap:40rem;
+  background-color: #fff;
+  box-shadow: 0 12px 12px 0 #fff;
 }
 
 /* the logo */
@@ -24,21 +25,18 @@ header {
   font-family: sans-serif;
 }
 
-
 /* style the nav properties */
 
 ul {
   padding: 1.2rem;
   flex-direction: row;
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
-
 
 li {
   list-style: none;
 }
-
 
 li a {
   text-decoration: none;
@@ -48,14 +46,15 @@ li a {
   font-family: serif;
 }
 
-
-
 .digits {
-  margin-left: 20px;
+  margin-left: 5px;
   font-weight: 600;
   font-family: sans-serif;
 }
 
+img{
+  width: 100%;
+} 
 /* add the background image */
 .background-section {
   background-image: url(img/pexels-photo-939331.webp);
@@ -63,18 +62,14 @@ li a {
   background-size: cover;
   width: 100%;
   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 /* use positioning to put position the words perfectly in the background image */
 
-
-.creative-words {
-  position: absolute;
-  transform: translate(-50%);
-  top: 50%;
-  left: 50%;
-}
-.creative-words h2{
+.creative-words h2 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -83,8 +78,7 @@ li a {
   color: rgb(227, 226, 224);
 }
 
-.creative-words p{
-  display: inline-block;
+.creative-words p {
   padding-bottom: 30px;
   line-height: 1.5;
   font-size: 14px;
@@ -97,14 +91,13 @@ li a {
 
 /* information section */
 
-
 .information-div {
   background-color: rgba(219, 218, 218);
   padding: 40px 10px;
 
   /* make it a flex property */
+  flex-wrap:wrap ;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -155,7 +148,7 @@ li a {
 
   /* make it a flex property */
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .words-img p {
@@ -166,7 +159,7 @@ li a {
 
 .words-img h5 {
   font-weight: 600;
-  padding:20px  10px;
+  padding: 20px 10px;
   font-family: san-serif;
 }
 
@@ -187,6 +180,7 @@ li a {
   padding: 30px 60px;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: rgb(222, 231, 231);
 }
@@ -202,12 +196,12 @@ li a {
   padding-bottom: 10px;
 }
 
-
 /* the footer section */
 .footer-div {
   padding: 30px 50px;
   background-color: rgb(181, 180, 180);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -242,7 +236,7 @@ li a {
 
 .details-div h6 {
   color: rgb(178, 174, 174);
-  padding: 20px;
+  padding: 10px;
   line-height: 1.5;
   font-family: serif;
   font-size: 12px;
@@ -251,3 +245,48 @@ li a {
 footer {
   padding-bottom: 50px;
 }
+
+
+
+/* media quries */
+@media(max-width:600px){
+  .creative-words h2{
+    font-size: 20px;  
+  }
+  /* .container{
+    width: 100%;
+  } */
+  .information-div{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+  }
+
+  .creative-words p{
+    font-size: 12px;
+  }
+ .words-div {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+ }
+ .images-section{
+  
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+ }
+ footer{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+ }
+}
+
+
+ 
