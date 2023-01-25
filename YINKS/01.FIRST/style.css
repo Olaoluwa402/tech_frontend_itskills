@@ -6,7 +6,6 @@
 }
 
 
-
 /* the header-section */
 header {
   display: flex;
@@ -69,7 +68,14 @@ img{
 }
 /* use positioning to put position the words perfectly in the background image */
 
-.creative-words h2 {
+
+.creative-words {
+  position: absolute;
+  transform: translate(-50%);
+  top: 50%;
+  left: 50%;
+}
+.creative-words h2{
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -78,7 +84,8 @@ img{
   color: rgb(227, 226, 224);
 }
 
-.creative-words p {
+.creative-words p{
+  display: inline-block;
   padding-bottom: 30px;
   line-height: 1.5;
   font-size: 14px;
