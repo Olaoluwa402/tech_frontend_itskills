@@ -1,87 +1,144 @@
 *{
-    padding: 0;
-    /* margin: 1%; */
+    padding: 0px;
+    margin: 0px;
     font-family: sans-serif;
+    box-sizing: border-box;
     
 }    
 
-header {
+.navigation {
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+    width: 100%;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    margin-left: 60px;
-    margin-right: 60px;
-    height: 40px
-}
-nav {
- display: flex;
- justify-content: space-between;
- font-size: 20px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+
 }
 
-ul{
-    margin-right: 40px;
-    
+.navigation > ul {
+    display: none;
 }
+
+.navigation .sidebar {
+    display: none;
+    position: relative;
+    position: fixed;
+    color: aqua;
+    background-color: rgb(32, 17, 233);
+    height: 100vh;
+    width: 250px;
+
+}
+        
+.menu {
+    cursor: pointer;
+
+}
+
+.logo {font-size: 20px;
+    cursor: pointer;
+
+}
+
+
 
 ul li {
     list-style: none;
-    text-decoration: none;
-    display: inline
-
-    
+           
 }
 
-.logo {font-size: 25px;
-
+ul li a {
+    text-decoration: none;
 }
 
 .hero {
+    background-color: aqua;
     background-image: url("../head\ background.jpg ");
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100px;
+    height: 450px;
+    background-size:cover
     padding-top: 200px;
     padding-bottom: 200px;
     width: auto;
     text-align: center;
     vertical-align: middle;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
 }
 
 .number {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .creative {
     align-content: center;
+    padding: 40px;
+    font-size: 40px;
 }
 
-.programs {
+.program {
     display: flex;
-   justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
 
 .w3 {
-   padding-left: 30px;
-   padding-right: 30px;
-   padding-bottom: 30px;
-   padding-top: 30px;
-    border: 5px;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
     text-align: justify;
+    width: 250px;
+    height: 250px;
+    margin: 30px auto
     
+    
+   
+   
+
 }
 
 .w3 h2 {
     text-align: center;
+    padding-bottom: 10px;
+
 }
-.w3 img {
-    margin: auto;
+
+.w3 .img {
+    background-color: aqua;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.botton {
+    padding-top: 30px;
 }
 
 
 
+@media (min-width: 900px) {
+    .w3 { 
+        
+         }
 
- 
+  }
+
+  @media (min-width: 900px) {
+    .program { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+                
+         }
+
+    }
+            
+            
