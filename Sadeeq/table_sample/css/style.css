@@ -1,0 +1,38 @@
+.tableWrapper {
+    overflow-x: auto;
+  }
+
+.tableWrapper table {
+    padding-left: 10px;
+    min-width: 680px;
+  }
+
+th {
+    color: white;
+}
+th p, td p{
+    font-size: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+  }
+
+
+
+thead {
+    background-color: #2D4078;
+}
+
+.tableWrapper table tbody tr tbody:nth-child(even) {
+  background-color: #F1F4F9;
+}
+
+tbody tr td:nth-child(odd) {
+    background-color: #E5E7F3;
+}
+
+th, td {
+    border-collapse: collapse;
+}
