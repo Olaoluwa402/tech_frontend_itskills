@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation ul{
+  display: flex;
+  list-style: none;
+}
+
+.navigation a{
+  text-decoration: none;
+}
+
+.navigation span{
+  font-size: 12px;
+}
+
+.menubar img{
+  width: 100px;
+  height: 100px;
+}
+
+.background{
+background: url("../ROCK/system.JPG");
+height: 450px;
+width: 100%;
+position: relative;
+display: flex;
+justify-content: center;
+background-repeat: no-repeat;
+background-position: center;
+align-items: center;
+background-size: cover;
+}
+
+.overlay{
+position: absolute;
+/* background-color: black; */
+background-color: rgba(16, 16, 16, 0.80);
+height: 450px;
+width: 100%;
+z-index: 1;
+}
+.content h1{
+  font-size: 50px;
+  z-index: 999;
+/* background-color: rgba(8, 8, 8, 0.56); */
+padding: 30px;
+border-radius: 10px;
+  color: #ffffff;
+} 
+
+
+@media(min-width:1040px){
+  .menubar img{
+    width: 100px;
+    height: 100px;
+    display: none;
+  }
+}
+
+.content p{
+  text-align: center;
+  color: white;
+  z-index: 999;
+  /* background-color: rgba(8, 8, 8, 0.56); */
+  padding: 30px;
+  border-radius: 10px;
+}
+.whatwedo {
+  margin: 100px auto;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  text-align: center;
+}
+.services {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 220px;
+  padding: 10px;
+  width: 250px;
+}
+
+.services p {
+  text-align: justify;
+}
+
+.iconContainer {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3497da;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+.thirdsec{
+  background-color: rgb(223,221,221);
+  position: relative;
+  width: 100%;
+  
+}
+.middlebody{
+  justify-content: center;
+  align-items:center;
+  display: flex;
+  align-items: center;
+  margin-right: 900px;
+}
+.rdsecimg {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
