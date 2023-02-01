@@ -1,0 +1,243 @@
+/* the universal selector to reset all elements to zero */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* the header-section */
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 40rem;
+  background-color: white;
+}
+
+/* the logo */
+
+.logo {
+  padding: 20px 40px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+/* style the nav properties */
+
+ul {
+  padding: 1.2rem;
+  flex-direction: row;
+  display: flex;
+  gap: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(57, 54, 54);
+  font-weight: 500;
+  font-family: serif;
+}
+
+.digits {
+  margin-left: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+/* add the background image */
+.background-section {
+  background-image: url(img/pexels-photo-939331.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+/* use positioning to put position the words perfectly in the background image */
+
+.creative-words {
+  position: absolute;
+  transform: translate(-50%);
+  top: 50%;
+  left: 50%;
+}
+.creative-words h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: san-serif;
+  text-align: center;
+  color: rgb(227, 226, 224);
+}
+
+.creative-words p {
+  display: inline-block;
+  padding-bottom: 30px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: serif;
+  text-align: center;
+  color: rgb(227, 226, 224);
+}
+
+/* style the next section */
+
+/* information section */
+
+.information-div {
+  background-color: rgba(219, 218, 218);
+  padding: 40px 10px;
+
+  /* make it a flex property */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* the font awesome and the button is in a seperate div */
+
+.button-div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* style the fontawesome icons */
+.icons {
+  color: rgb(181, 180, 180);
+  font-size: 20px;
+}
+
+/* style the button carrying the fontawesome */
+.information-div button {
+  background-color: rgb(31, 31, 172);
+  border: none;
+  padding: 20px 20px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* the information h4 */
+.information-div h4 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(17, 131, 131);
+}
+/* the information p */
+.information-div p {
+  font-size: 13px;
+  font-family: serif;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+/* another section */
+
+.words-img {
+  padding: 50px 80px;
+  background-color: rgb(222, 231, 231);
+
+  /* make it a flex property */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.words-img p {
+  padding-top: 20px;
+  font-family: serif;
+  font-size: 13px;
+}
+
+.words-img h5 {
+  font-weight: 600;
+  padding: 20px 10px;
+  font-family: san-serif;
+}
+
+.words-img h6 {
+  line-height: 1.3;
+  font-size: 12px;
+  font-family: serif;
+  padding-bottom: 20px;
+}
+.words-img button {
+  padding: 5px 20px;
+  border: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.images-section {
+  padding: 30px 60px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(222, 231, 231);
+}
+
+.images-section p {
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.images-section h6 {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+/* the footer section */
+.footer-div {
+  padding: 30px 50px;
+  background-color: rgb(181, 180, 180);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-div p {
+  padding-left: 9px;
+  padding-top: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.footer-div span {
+  font-weight: none;
+  padding-left: 25px;
+  font-size: 12px;
+}
+
+/* i created anoher div  */
+.details-div {
+  background-color: white;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.details-div h5 {
+  color: rgb(17, 131, 131);
+  padding: 20px 0 0 20px;
+  font-family: serif;
+}
+
+.details-div h6 {
+  color: rgb(178, 174, 174);
+  padding: 20px;
+  line-height: 1.5;
+  font-family: serif;
+  font-size: 12px;
+}
+
+footer {
+  padding-bottom: 50px;
+}
