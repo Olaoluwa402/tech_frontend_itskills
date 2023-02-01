@@ -1,0 +1,27 @@
+.tableWrapper{
+    overflow: auto;
+}
+.tableWrapper table{
+    padding-left: 10px;
+    min-width: 680px;
+}
+.tableWrapper table th{
+    border: 2px solid rgb(5, 3, 3);
+}
+.tableWrapper table td{
+    border: 1px solid black;
+    text-align: center;
+}
+.tableWrapper table tbody tr:nth-child(even){
+    background-color: peachpuff;
+}
+.tableWrapper table tbody tr:nth-child(odd){
+    background-color: rgb(218, 105, 6);
+}
+.tableWrapper table .cartitem{
+display: flex;
+align-items: center;
+}
+.tableWrapper table .cartitem img{
+ margin-right: 5px;
+    }

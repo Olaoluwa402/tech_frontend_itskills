@@ -12,16 +12,19 @@ ul {
   padding: 0;
   margin: 0;
 }
+.container{
+  width: 80%;
+}
 
 /* navigation style */
 
 .logo {
   width: 100px;
-  height: 70px;
+  height: 30px;
   cursor: pointer;
 }
 
-.menuBar {
+.menu {
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -93,19 +96,17 @@ ul {
   /* sideBar ends */
 }
 
-/* hero section */
+/* background section */
 
-.hero {
+.backgroundSection {
   position: relative;
   width: 100%;
   height: 450px;
-  /* height: calc(100vh - 90px); */
   background-color: rgb(93, 47, 47);
-  background-image: url("../images/pexels-ann-poan-5797997.jpg");
+  background-image: url(../images/bg.jfif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,40 +125,222 @@ ul {
   z-index: 0;
 }
 
-.hero .creative {
+.backgroundSection .creativeWords {
   color: #fff;
   padding: 20px;
   z-index: 1;
 }
 
-.hero .creative h1 {
+.backgroundSection .creativeWords h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-.hero .creative p {
+.backgroundSection .creativeWords p {
   text-align: center;
 }
 
-/* hero ennds */
+/* background session ends */
+/*what we do section working vin mobile view*/
+.whatwedo{
+  margin: 100px auto;
+  font-size: 1.1rem;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+background-color: #ecdede;
+min-height: 300px;
 
+
+
+}
+.services{
+  margin: 20px 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+height: 220px;
+padding: 10px;
+width: 250px;
+
+}
+.services p{
+  text-align: justify;
+}
+.iconContainer{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #3497da;
+  color: #fff;
+
+}
+.viewmore{
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+min-height: 300px;
+font-size: 1.2rem;
+}
+.viewmoreColor{
+  background-color:gray;
+  width: 100%;
+}
+#more{
+  flex-direction: column;
+  height: 220px;
+  padding: 10px;
+  width: 300px;
+  
+  
+}
+.viewmore > #more > p{
+  margin-bottom: 20px;
+
+}
+.viewmore p:nth-child(1) {
+  font-size: 0.9rem;
+}
+.viewmore > #more > h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.viewmore > #more > button{
+  background-color: #eeeeee;
+  border: none;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 10px;
+
+
+}
+#side_laptop{
+  width: 300px;
+  height: 200px;
+}
+.threesection{
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  justify-content: center;
+  width:400px;
+  padding: 10px 50px;
+  position: relative;
+ /* margin: 100px auto;*/
+}
+.threesection img{
+  width: 200px;
+  height: 200px;
+}
+/* the overlay on the three sections
+.overlayThrees{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}*/
+.threesection #thenews{
+  color: rgb(233, 150, 150);
+  padding: 20px;
+  z-index: 1;
+}
+.threesection #thenews p{
+  text-align: center;
+  font-size: 0.4rem;
+  margin-bottom: 10px;
+  width: 200px;
+  position: absolute;
+  top: 15%;
+}
+.threesection #thenews h3{
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  width: 200px;
+  position: absolute;
+  top: 20%;
+}
+
+.footer{
+  display: flex;
+  background-color:rgb(241, 224, 224);
+  text-align: center;
+}
 /* resposive designn */
 @media (min-width: 680px) {
-  .hero .creative p {
+  .backgroundSection .creativeWords p {
     width: 480px;
+  }
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .viewmore{
+    flex-direction: row;
+width: 0 auto;
+  }
+  .threesection{
+    flex-direction: row;
+    width: 100%;
   }
 }
 
 @media (min-width: 1040px) {
-  .hero .creative p {
+  .backgroundSection .creativeWords p {
     width: 680px;
   }
 
   .navigation > ul {
     display: flex;
   }
-  .menuBar {
+  .menu {
     display: none;
+  }
+  .whatwedo{
+    
+  flex-direction: row;
+  width: 75%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  }
+  .container{
+    width: 80%;
+  }
+  .viewmore{
+    flex-direction: row;
+    width: 0 auto;
+
+  }
+  .threesection{
+    flex-direction: row;
+
+  }
+  .threesection img{
+    width: 350px;
+    height: 200px;
+
+  }
+  .threesection #thenews p{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    width: 400px;
+  }
+  .threesection #thenews h3{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    width: 400px;
   }
 }
