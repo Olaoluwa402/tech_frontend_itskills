@@ -1,5 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7073472dff.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.o"/>
+</head>
+<body>
+    <!-- This website was built for the mobile first, then optimized for desktop -->
+
+    <!--The header section contains the logo and the navigation bar-->
+
+    <header>
+        <!-- Logo -->
+        <h2>Softgray</h2> 
+        <!-- menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="">products</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">jobs</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">+81-00-0000-0000</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    
+    <!--This is the banner section-->
+    <section class="container1">
+        <div class="creative">
+            <h1>Creative Solutions</h1>
+            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                "There is no one who loves pain itself, 
+                who seeks after it and wants to have it, simply because it is pain..."</p>
+        </div>
+    </section>
+
+    <!-- The wrapper centers all the sections on the page apart from the banner  
+        on the page (not fully completed) -->
+    <div class="wrapper">
+        <!--This section takes care of the what we do section-->
+        <section class="container2">
+            <div class="whatwedo">
+                <i class='far fa-comment' style='font-size:30px'></i>
+                <h3>Consulting</h3>
+                <p>Lorem Ipsum is simply dummy
+                    text of the printing and
+                    typesetting industry. 
+                    Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s
+                </p>
+            </div>
+
+            <div class="whatwedo">
+                <i class='fas fa-code' style='font-size:30px'></i>
+                <h3>Developing</h3>
+                <p>Lorem Ipsum is simply dummy
+                    text of the printing and
+                    typesetting industry. 
+                    Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s
+                </p>
+            </div>
+
+            <div class="whatwedo">
+                <i class='far fa-edit' style='font-size:30px'></i>
+                <h3>Designing</h3>
+                <p>Lorem Ipsum is simply dummy
+                    text of thec printing and
+                    typesetting industry. 
+                    Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s
+                </p>
+            </div>
+
+            <div class="whatwedo">
+                <i class='fas fa-chart-line' style='font-size:30px'></i>
+                <h3>Analysis</h3>
+                <p>Lorem Ipsum is simply dummy
+                    text of the printing and
+                    typesetting industry. 
+                    Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s
+                </p>
+            </div>
+            
+        </section>
+
+        <!-- Third section -->
+        <section class="container3">
+            <div class="context">
+                <div id="viewmore">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2>LOREM IPSUM.</h2>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ex quod blanditiis voluptas aut provident!</P>
+                    <button id="myBtn">View More</button>
+                </div>
+                <div id="side_laptop">
+                    <img src="./images/pexels-karsten-madsen-18105.jpg" alt="Macbook Pro" width="300px" height="200px">
+                </div>
+            </div>
+            <div class="bottomcontainer">
+                <div class="thenews">
+                    <p>MAGAZINE PUBLISHING TOOL</p>
+                    <h3>THE NEWS</h3>
+                    <img src="./images/pexels-photomix-company-242492.jpg" alt="News Letter" width="200px" height="200px">
+                </div>
+                <div class="thenews">
+                    <p>DIGITAL BOOK PUBLISHING TOOL</p>
+                    <h3>LIBRO</h3>
+                    <img src="./images/pexels-engin-akyurt-2767814.jpg" alt="News Letter" width="200px" height="200px">
+                </div>
+                <div class="lastnews">
+                    <p>FONT EDITOR</p>
+                    <h3>ELITE</h3>
+                    <img src="./images/EE.jpg" alt="News Letter" width="200px" height="200px">
+                </div>
+            </div>
+        </section>
+        <!-- last section -->
+        <section>
+            <div class="container4">
+                <div class="news">
+                    <a class="maintext" href="">LATEST NEWS</a>
+                    <a class="subtext" href=""> SEE ALL NEWS</a>
+
+                    
+                    <div class="words">
+                        <img src="/OYENIJI/HTML_BASIC/images/pexels-luis-quintero-2833037.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima laborum blanditiis animi in iusto sequi tempora voluptatem excepturi expedita! 
+                            <!-- <span class="readmore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia nisi, consectetur natus sequi iusto hic quod asperiores vero odit sapiente cumque harum quam, placeat laudantium nihil sit architecto iste?</span> -->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="release">
+                    <a class="maintext" href="">RELEASE</a>
+                    <a class="subtext" href=""> SEE ALL RELEASE</a>
+
+                    
+                    <div class="words">
+                        <img src="/OYENIJI/HTML_BASIC/images/pexels-limon-das-1100447.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima laborum blanditiis animi in iusto sequi tempora voluptatem excepturi expedita! 
+                            <!-- <span class="readmore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia nisi, consectetur natus sequi iusto hic quod asperiores vero odit sapiente cumque harum quam, placeat laudantium nihil sit architecto iste?</span> -->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <a class="maintext" href="">JOBS</a>
+
+                    
+                    <div class="words">
+                        <img src="/OYENIJI/HTML_BASIC/images/pexels-marc-mueller-380769.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima laborum blanditiis animi in iusto sequi tempora voluptatem excepturi expedita! 
+                            <!-- <span class="readmore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia nisi, consectetur natus sequi iusto hic quod asperiores vero odit sapiente cumque harum quam, placeat laudantium nihil sit architecto iste?</span> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+</body>
+</html>
+=======
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -118,6 +291,143 @@
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s
         </p>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Soft Gray</title>
+  </head>
+  <body>
+    <!--The header section contains the logo and the navigation bar-->
+
+    <header>
+      <nav class="navigation">
+        <!-- logo -->
+        <div class="logo">
+          <a href="">
+            <img
+              src="./images/Logo+white+on+transparent+background+soft+gray+shadow.png"
+              alt="Varde Valley Logo"
+            />
+          </a>
+        </div>
+
+        <ul>
+          <li>
+            <a href="">PRODUCTS</a>
+          </li>
+          <li><a href="">SERVICES</a></li>
+
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">JOBS</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+        <span>+81-00-0000-0000</span>
+
+        <div class="menuBar"><img src="./images/Hamburger_icon.png" /></div>
+
+        <!-- mobile -->
+        <div class="sideBar">
+          <div class="closeSideBar">X</div>
+          <div class="logo">
+            <a href="">
+              <img
+                src="./images/Logo+white+on+transparent+background+soft+gray+shadow.png"
+                alt="Varde Valley Logo"
+              />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              <a href="">PRODUCTS</a>
+            </li>
+            <li><a href="">SERVICES</a></li>
+
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">JOBS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <!-- mobile sideBar ends -->
+      </nav>
+    </header>
+
+    <!--This section below contains the image and moto of the company-->
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <div class="creative">
+        <h1>Creative Solutions</h1>
+        <p>
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit..." "There is no one who loves pain
+          itself, who seeks after it and wants to have it, simply because it is
+          pain..."
+        </p>
+      </div>
+    </section>
+
+    <!--This section takes care of the what we do section-->
+    <section style="width: 100%; background-color: #eee">
+      <div class="whatwedo container">
+        <div id="consulting" class="services">
+          <div class="iconContainer">
+            <i class="fa fa-comment" aria-hidden="true"></i>
+          </div>
+          <h3>Consulting</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </p>
+        </div>
+
+        <div id="developing" class="services">
+          <div class="iconContainer">
+            <i class="fa fa-code" aria-hidden="true"></i>
+          </div>
+          <h3>Developing</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </p>
+        </div>
+
+        <div id="designing" class="services">
+          <div class="iconContainer">
+            <i class="fa-solid fa-camera-retro"></i>
+          </div>
+          <h3>Designing</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of thec printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </p>
+        </div>
+
+        <div id="analysis" class="services">
+          <div class="iconContainer">
+            <i class="fa fa-line-chart" aria-hidden="true"></i>
+          </div>
+          <h3>Analysis</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </p>
+        </div>
+>>>>>>> 73ad73d85093b6423361c4aa497e71f980a16e2c
       </div>
     </section>
 
@@ -233,3 +543,7 @@
     </footer>
   </body>
 </html>
+<<<<<<< HEAD
+>>>>>>> 6f63eac0bc4ec35973081fb601539ded9ab7753f
+=======
+>>>>>>> 73ad73d85093b6423361c4aa497e71f980a16e2c

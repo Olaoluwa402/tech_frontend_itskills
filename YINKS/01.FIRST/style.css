@@ -1,243 +1,336 @@
-/* the universal selector to reset all elements to zero */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-/* the header-section */
-header {
-  display: flex;
-  flex-direction: row;
-  gap: 40rem;
-  background-color: white;
+/* globals */
+img {
+  width: 100%;
 }
-
-/* the logo */
+ul {
+  padding: 0;
+  margin: 0;
+}
+.container{
+  width: 80%;
+}
+/* navigation style */
 
 .logo {
-  padding: 20px 40px;
-  font-weight: 600;
-  font-size: 20px;
-  font-family: sans-serif;
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
 }
 
-/* style the nav properties */
+.menuBar {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
 
-ul {
-  padding: 1.2rem;
-  flex-direction: row;
+.navigation {
+  height: 90px;
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* flex-direction: column; */
 }
 
-li {
+.navigation > ul {
+  display: none;
+  font-size: 12px;
   list-style: none;
 }
 
-li a {
+.navigation ul li {
+  margin-right: 30px;
+}
+
+.navigation ul li a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: rgb(57, 54, 54);
-  font-weight: 500;
-  font-family: serif;
 }
 
-.digits {
-  margin-left: 20px;
-  font-weight: 600;
-  font-family: sans-serif;
+.navigation ul li a:hover {
+  text-decoration: underline;
 }
 
-/* add the background image */
-.background-section {
-  background-image: url(img/pexels-photo-939331.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
+.navigation span {
+  font-size: 12px;
+}
+
+/* side Bar */
+
+.navigation .sideBar {
+  display: none;
   position: relative;
-}
-/* use positioning to put position the words perfectly in the background image */
-
-.creative-words {
-  position: absolute;
-  transform: translate(-50%);
-  top: 50%;
-  left: 50%;
-}
-.creative-words h2 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  font-family: san-serif;
-  text-align: center;
-  color: rgb(227, 226, 224);
-}
-
-.creative-words p {
-  display: inline-block;
-  padding-bottom: 30px;
-  line-height: 1.5;
-  font-size: 14px;
-  font-family: serif;
-  text-align: center;
-  color: rgb(227, 226, 224);
-}
-
-/* style the next section */
-
-/* information section */
-
-.information-div {
-  background-color: rgba(219, 218, 218);
-  padding: 40px 10px;
-
-  /* make it a flex property */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-/* the font awesome and the button is in a seperate div */
-
-.button-div {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-/* style the fontawesome icons */
-.icons {
-  color: rgb(181, 180, 180);
-  font-size: 20px;
-}
-
-/* style the button carrying the fontawesome */
-.information-div button {
-  background-color: rgb(31, 31, 172);
-  border: none;
-  padding: 20px 20px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-/* the information h4 */
-.information-div h4 {
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 14px;
-  font-family: sans-serif;
-  color: rgb(17, 131, 131);
-}
-/* the information p */
-.information-div p {
-  font-size: 13px;
-  font-family: serif;
-  line-height: 1.5;
-  padding-bottom: 30px;
-}
-
-/* another section */
-
-.words-img {
-  padding: 50px 80px;
-  background-color: rgb(222, 231, 231);
-
-  /* make it a flex property */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.words-img p {
-  padding-top: 20px;
-  font-family: serif;
-  font-size: 13px;
-}
-
-.words-img h5 {
-  font-weight: 600;
+  width: 250px;
+  height: 100vh;
+  color: aliceblue;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 20px 10px;
-  font-family: san-serif;
 }
 
-.words-img h6 {
-  line-height: 1.3;
-  font-size: 12px;
-  font-family: serif;
-  padding-bottom: 20px;
-}
-.words-img button {
-  padding: 5px 20px;
-  border: none;
-  color: #000;
-  text-transform: uppercase;
+.navigation .sideBar ul {
+  display: block;
 }
 
-.images-section {
-  padding: 30px 60px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(222, 231, 231);
+.navigation .sideBar ul li {
+  margin-bottom: 15px;
 }
 
-.images-section p {
-  font-weight: 600;
-  font-size: 15px;
-  padding-bottom: 10px;
+.navigation .sideBar ul li a {
+  color: aliceblue;
 }
 
-.images-section h6 {
-  font-size: 12px;
-  padding-bottom: 10px;
+.closeSideBar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  /* sideBar ends */
 }
 
-/* the footer section */
-.footer-div {
-  padding: 30px 50px;
-  background-color: rgb(181, 180, 180);
-  display: flex;
-  justify-content: space-between;
-}
+/* hero section */
 
-.footer-div p {
-  padding-left: 9px;
-  padding-top: 40px;
-  font-weight: 600;
-  font-size: 15px;
-  padding-bottom: 20px;
-}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  /* height: calc(100vh - 90px); */
+  background-color: rgb(93, 47, 47);
+  background-image: url("img/pexels-photo-939331.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-.footer-div span {
-  font-weight: none;
-  padding-left: 25px;
-  font-size: 12px;
-}
-
-/* i created anoher div  */
-.details-div {
-  background-color: white;
-  justify-content: space-around;
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-.details-div h5 {
-  color: rgb(17, 131, 131);
-  padding: 20px 0 0 20px;
-  font-family: serif;
+/* overlay */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
 }
 
-.details-div h6 {
-  color: rgb(178, 174, 174);
+.hero .creative {
+  color: #fff;
   padding: 20px;
-  line-height: 1.5;
-  font-family: serif;
-  font-size: 12px;
+  z-index: 1;
 }
 
-footer {
-  padding-bottom: 50px;
+.hero .creative h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
+ 
+.hero .creative p {
+  text-align: center;
+}
+
+/* hero ennds */
+
+/* whattodo section */
+
+.whatwedo{
+  margin: 100px auto;
+  font-size: 1.1rem;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  
+
+}
+
+.services{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 220px;
+  width: 250px;
+  
+}
+.services p {
+  text-align: justify;
+}
+
+.iconContainer{
+  width: 60px;
+  height: 60px;
+  background-color: #3487da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+}
+/* whattodo ends */
+
+/* words-img starts */
+
+.words-img{
+  line-height: 1.1rem;
+  background-color: rgb(236, 239, 242);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 20px 0 40px;
+  
+
+  
+} 
+.words-div{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 220px;
+  width: 250px;
+  
+}
+
+.words-div > p{
+  margin-bottom: 20px;
+}
+.words-div > h5{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family:  sans-serif;
+
+} 
+.words-div > h6{
+  font-size: 10px;
+}
+
+.words-div > button{
+  background-color: #fff;
+  color: black;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  padding: 10px 30px;
+}
+
+.images-section{
+  background-color:#000;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 20px 0 40px;
+
+}
+
+.images-section img{
+  width: 80%;
+  /* position: relative; */
+   color: white;
+}
+
+.images-section  h6 {
+  color: white;
+  position: absolute;
+  right: 10%;
+}
+
+
+.images-section p{
+  position: absolute;
+  top:10%;
+}
+
+
+
+/* words-img end */
+
+/* resposive designn */
+@media (min-width: 680px) {
+  .hero .creative p {
+    width: 480px;
+  }
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1040px) {
+  .hero .creative p {
+    width: 680px;
+  }
+
+
+  .navigation > ul {
+    display: flex;
+    
+  }
+  .menuBar {
+    display: none;
+  }
+
+  .whatwedo{
+   flex-direction: row;
+   width: 75%;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+  
+  }
+  .container{
+    width: 80%;
+  }
+
+  .words-img{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-top: 30px; 
+  } 
+
+  .words-div{
+
+    display: flex;
+    flex-direction: column;
+     align-items: flex-start;
+  }
+
+ .img-div img{
+  width: 400px;
+  height: 300px;
+ }
+
+ 
+
+
+.words-div > h6{
+  width: 380px;
+  font-size: 14px;
+}
+
+}
+
+
+                                                                                                                          

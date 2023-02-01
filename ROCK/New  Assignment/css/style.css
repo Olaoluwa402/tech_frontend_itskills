@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(252, 252, 252);
+}
+.tablewrapper{
+    overflow-x: auto;
+}
+.tablewrapper table {
+    padding-left: 50px;
+    min-width: 1000px;
+}
+
+.tablewrapper table td{
+    padding: 5px;
+    text-align:
+
+}
+thead{
+background-color: blue;
+color: white;
+}
+
+thead tr{
+    height: 80px;
+}
+
+tbody{
+    color: blue;
+}
+.arsh{
+    background-color: rgb(126, 126, 126);
+}
+.ticks{
+    text-align: center;
+}

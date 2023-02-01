@@ -1,0 +1,33 @@
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.tableWrapper table {
+  padding-left: 10px;
+  min-width: 680px;
+}
+
+.tableWrapper table th {
+  border: 2px solid #2e2e2e;
+}
+
+.tableWrapper table td {
+  border: 1px solid #2f2f2f;
+  text-align: center;
+  padding: 5px;
+}
+
+.tableWrapper table tbody tr:nth-child(even) {
+  background-color: #c0a2a2;
+}
+.tableWrapper table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.tableWrapper table .cartItem {
+  display: flex;
+  align-items: center;
+}
+.tableWrapper table .cartItem img {
+  margin-right: 5px;
+}
