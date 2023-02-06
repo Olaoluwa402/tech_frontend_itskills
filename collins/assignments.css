@@ -1,0 +1,48 @@
+.itself {
+    overflow-x: auto;
+}
+
+.itself table {
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.itself table th {
+    padding: 20px;
+    border: 0.3px outset rgb(54, 51, 51);
+    font-size: large;
+    color: aliceblue;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.itself table thead {
+    height: 100px;
+    background-color: rgb(29, 48, 82);
+    text-align: center;
+}
+
+.itself table td {
+    border: 0.3px solid black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200px;
+    font-size: large;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.itself table tbody tr td img {
+    height: 15px;
+    width: 15px;
+}
+
+.itself table tbody tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.itself table tbody tr:nth-child(odd) {
+    background-color: azure;
+}
