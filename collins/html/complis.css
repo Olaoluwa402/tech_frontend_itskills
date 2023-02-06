@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#6060d8, white);
+}
+
+.div-container .main-div {
+    width: 90%;
+    background-image: linear-gradient(rgb(37, 33, 33) 40%, rgb(11, 164, 224) 180%);
+    position: relative;
+    padding: 40px 5px;
+    margin: 10% auto;
+}
+
+
+/* navigation starts */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.logo-div img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-div h4 {
+    color: #6060d8;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.logo-div h4 span {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+nav {
+    background-color: #6060d8;
+    border-radius: 12px 0 0 12px;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+.top-toggle {
+    width: 50px;
+    background-color: rgb(2, 2, 2);
+    padding: 1px 20px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 1px 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li input {
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: rgb(222, 214, 214);
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+nav ul li .icon {
+    position: absolute;
+    right: 7%;
+    top: 32%;
+    color: rgb(56, 5, 56);
+}
+
+.menuBar {
+    display: flex;
+    width: 25px;
+    height: 30px;
+}
+
+
+/* navigation ends */
+
+
+/* program information starts */
+
+.program-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.details {
+    text-align: center;
+}
+
+.details h4 {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+.details h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6060d8;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.details h3 {
+    font-family: sans-serif;
+    color: #000;
+    font-size: 20px;
+}
+
+.details p {
+    margin: 10px 0 20px;
+    font-family: gray;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.active-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.active-button .apply {
+    color: #fff;
+    background-image: linear-gradient(#6060d8, #5151ba);
+    text-decoration: none;
+    padding: 6px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.active-button .read {
+    font-weight: 600;
+    padding: 6px 20px;
+    outline: 2px solid #6060d8;
+    border: none;
+    border-radius: 10px;
+    color: rgb(25, 2, 2);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.active-button .read:hover {
+    background: #6060d9;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.image-div img {
+    margin-top: 40px;
+    width: 200px;
+    height: 150px;
+    border-radius: 31% 69% 70% 30% / 71% 61% 39% 29%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.box-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    top: 56%;
+}
+
+.box-container .littleBox {
+    background-color: #6060d8;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 9px;
+    opacity: 0.7;
+}
+
+.box-container .first-box {
+    background-color: #2121c2;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+
+/* program information ends */
+
+
+/* social details starts */
+
+.social-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-div .icons a {
+    border: none;
+    border: 2px solid #aeaefb;
+    border-radius: 10%;
+    padding: 3px 5px;
+}
+
+.social-div .icons a .icon {
+    color: #6060d9;
+    width: 13px;
+}
+
+.social-div .messaging img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* socials details end */
+
+
+/* media queries */
+
+@media(min-width:1000px) {
+    .div-container {
+        width: 90%;
+    }
+    .div-container .main-div {
+        width: 800px;
+        padding: 15px 0 12px 40px;
+        position: relative;
+        margin: 10% auto;
+    }
+    nav {
+        display: flex;
+    }
+    .menuBar {
+        display: none;
+    }
+    .program-info {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .details {
+        text-align: left;
+        padding-top: 0;
+    }
+    .details h4 {
+        font-size: 20px;
+    }
+    .details h1 {
+        font-size: 40px;
+        line-height: 37px;
+    }
+    .details h3 {
+        font-size: 32px;
+    }
+    .details p {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .active-button {
+        flex-direction: row;
+        align-items: center;
+    }
+    .active-button .apply {
+        padding: 9px 30px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .active-button .read {
+        font-weight: 600;
+        padding: 6px 25px;
+        font-size: 17px;
+        border-radius: 15px;
+        color: rgb(225, 219, 219);
+    }
+    .image-div img {
+        width: 250px;
+        height: 200px;
+        margin-right: 60px;
+    }
+    .box-container {
+        flex-direction: column;
+        right: 0;
+        top: 40%;
+    }
+    .box-container .littleBox {
+        margin-bottom: 9px;
+        border-radius: 0;
+    }
+    .box-container .first-box {
+        margin-bottom: 9px;
+        border-radius: 0;
+    }
+    .social-div .icons a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 4px 4px;
+        margin-left: 9px;
+        border-radius: 50%;
+    }
+    .social-div .icons a .icon {
+        width: 15px;
+    }
+    .social-div .messaging img {
+        width: 90px;
+        height: 90px;
+    }
+    .social-div {
+        justify-content: space-between;
+    }
+}
+
+
+/* end media queries */
