@@ -1,0 +1,36 @@
+.background{
+  color: #f11010;
+}
+.body{
+    
+}
+.tablewrapper{
+    overflow-x: auto;
+}
+.tablewrapper table {
+    padding-left: 12px;
+    min-width: 700px;
+}
+.tablewrapper table th {
+    border: 2px solid #2e2e2e;
+}
+.tablewrapper table td{
+    border: 1px solid #2f2f2f;
+    padding: 5px;
+    text-align: center;
+}
+.tableWrapper table tbody tr:nth-child(even) {
+    background-color: #f11010;
+  }
+  .tableWrapper table tbody tr:nth-child(odd) {
+    background-color: rgb(62, 15, 231);
+  }
+  
+  .tableWrapper table .item {
+    display: flex;
+    align-items: center;
+  }
+  .tableWrapper table .item img {
+    margin-right: 5px;
+  }
+  
