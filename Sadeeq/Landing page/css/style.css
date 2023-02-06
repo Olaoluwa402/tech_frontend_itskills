@@ -5,7 +5,7 @@
 }
 body {
     height: 100vh;  
-    background-image: linear-gradient(to right, #3c3c4e9a 0%, #7e7e8d5b 10%);  
+    background-color: #7e7e8d5b;  
 }
 
 a {
@@ -18,7 +18,7 @@ ul {
 }
 
 header {
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .logo {
@@ -94,10 +94,12 @@ header {
     cursor: pointer;
 }
 
-#myInput {
+/* #myInput {
     position: relative;
-    border-radius: 15%;
-}
+    border-radius: 18%;
+    border: 2px solid #F1EFFA;
+    height: 15px;
+} */
 
 .myinput i {
     position: absolute;
@@ -139,6 +141,21 @@ h1 {
     width: 320px;
 }
 
+#applynow {
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(#F1EFFA, #6163D6);
+    padding: 10px;
+    width: 150px;
+}
+
+#readmore {
+    border-color: #5D60D4;
+    border-radius: 25px;
+    padding: 10px;
+    width: 150px;
+}
 
 /* mobile image slider */
 .slider {
@@ -170,6 +187,25 @@ footer {
     margin: 40px 80px;
   }
 
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5D60D4;
+    border-color: #5D60D4;
+    align-items: center;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+}
+
 .chat i{
     display: flex;
     align-items: center;
@@ -180,21 +216,6 @@ footer {
     height: 60px;
 }
 
-#applynow {
-    border-radius: 25px;
-    border: none;
-    color: white;
-    background-image: linear-gradient(#F1EFFA, #6163D6);
-    padding: 10px;
-    width: 150px;
-}
-
-#readmore {
-    border-color: #5D60D4;
-    border-radius: 25px;
-    padding: 10px;
-    width: 150px;
-}
 
 @media (min-width: 1040px) {
     .bar > ul {
@@ -235,8 +256,7 @@ footer {
         text-align: justify;
         align-items: center;
         justify-content: space-between;
-        /* margin: 30px auto; */
-        margin-left: 120px;
+        margin-left: 20px;
     }
 
 
@@ -246,9 +266,17 @@ footer {
         width: 320px;
     }
 
+    h1 {
+        font-size: 85px;
+    }
+    
+    #medium {
+        font-size: 60px;
+    }
+
     #lorem {
-        width: 300px;
-        /* text-align: justify; */
+        width: 500px;
+        padding-right: 20px;
     }
 
 }
