@@ -152,14 +152,14 @@ h2 {
     padding-left: 20px;
 }
 
-.network{
+.network, .support{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.agency, .partner{
+.agency, .partner, .paid, .free{
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -185,12 +185,12 @@ h2 {
         height: 200px;
     }
 
-    .network{
+    .network, .support{
         display: flex;
         flex-direction: row;
     }
 
-    .agency, .partner{
+    .agency, .partner, .paid, .free{
         width: 320px;
     }
 }
@@ -246,7 +246,8 @@ h2 {
     }
 
     h3 {
-        margin-left: 80px;
+        margin-left: 40px;
+        margin-top: 20px;
     }
 
     .request {
@@ -254,7 +255,7 @@ h2 {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 900px;
+        width: 1000px;
         height: 300px;
         background-image: linear-gradient(to top right, white 60%, #2860f1);;
     }
@@ -274,12 +275,13 @@ h2 {
         background-image: none
     }
 
-    .network{
+    .network, .support{
         display: flex;
         flex-direction: row;
     }
 
-    .agency, .partner{
-        width: 400px;
+    .agency, .partner, .paid, .free{
+        width: 450px;
+        padding-left: 4px;
     }
 }
