@@ -218,55 +218,55 @@ footer {
 
 
 @media (min-width: 1040px) {
-    .bar > ul {
-        display: flex;
-      }
-    .menu {
-        display: none;
+.bar > ul {
+    display: flex;
+    }
+.menu {
+    display: none;
+    }
+
+.bar {
+    position: relative;
+    display: flex;
+    background-image: linear-gradient(#F1EFFA, #6163D6);
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    width: 50%;
+    height: 50px;
+    padding: 8px;
+    align-items: center;
+   justify-content: center;
       }
 
-      .bar {
-        position: relative;
-        display: flex;
-        background-image: linear-gradient(#F1EFFA, #6163D6);
-        border-top-left-radius: 80px;
-        border-bottom-left-radius: 80px;
-        width: 50%;
-        height: 50px;
-        padding: 8px;
-        align-items: center;
-        justify-content: center;
-      }
-
-      #myInput {
-        position: relative;
+#myInput {
+    position: relative;
     }
     
-    .myinput i {
-        position: absolute;
-        top: 16px;
-        left: 435px;
-        cursor: pointer;
+.myinput i {
+    position: absolute;
+    top: 16px;
+    left: 435px;
+    cursor: pointer;
     }
     
 
-    .learn {
-        display: flex;
-        flex-direction: row;
-        text-align: justify;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 20px;
+.learn {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
     }
 
 
-    .apply {
-        display: flex;
-        justify-content: space-between;
-        width: 320px;
+.apply {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
     }
 
-    h1 {
+h1 {
         font-size: 85px;
     }
     
