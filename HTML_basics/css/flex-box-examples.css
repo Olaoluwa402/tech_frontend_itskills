@@ -1,0 +1,44 @@
+/* container flex properties */
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  /* justify-content: space-between; */
+  background-color: blue;
+  height: 450px;
+}
+.flex-item {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  background-color: white;
+}
+.flex-item-1 {
+  /* align-self: flex-end; */
+  order: 3;
+
+  /* flex-grow: 1;
+  flex-shrink: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.flex-item-2 {
+  /* flex-grow: 2;
+  flex-shrink: 0; */
+  /* align-self: flex-end; */
+  order: 2;
+}
+
+.flex-item-3 {
+  /* flex-grow: 3;
+  flex-shrink: 0; */
+  order: 1;
+  /* align-self: flex-start; */
+}
+
+/* item flex properties */

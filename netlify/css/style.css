@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary100: #112caf;
+  --primary80: #2250f4;
+  --white100: #fff;
+  --seagreen100: #5cebdf;
+  --seagreen80: #a1dad5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.advert {
+  position: relative;
+  height: 40px;
+  background-color: var(--primary100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.advert > p {
+  color: var(--white100);
+  font-size: 0.75rem;
+}
+
+.advert > p > a {
+  text-decoration: none;
+  color: var(--white100);
+}
+
+.advert > p > a:hover {
+  text-decoration: underline;
+}
+
+.advert > i {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: var(--white100);
+}
+
+/* navigation styles */
+
+.navigation {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white100);
+  padding: 0 15px;
+}
+
+.navigation > .leftNav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation > .leftNav > ul {
+  display: none;
+  align-items: center;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.navigation > .leftNav > ul > li {
+  margin-right: 8px;
+}
+.navigation > .leftNav > ul > li:hover {
+  border: 2px solid var(--primary80);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.navigation > .rightNav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation > .rightNav > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation > .rightNav > ul > li {
+  margin-right: 8px;
+}
+
+.navigation > .rightNav > ul > li:hover {
+  border: 2px solid var(--primary80);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.login button,
+.signup button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.signup button {
+  display: none;
+}
+
+/* hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: var(--primary100);
+}
+
+.hero > h1 {
+  color: var(--white100);
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.hero > button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--seagreen100);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero > button:hover {
+  background-color: var(--seagreen80);
+}
+
+.hero > button > span {
+  margin-right: 5px;
+}
+
+@media (min-width: 520px) {
+  .advert > p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation > .leftNav > ul {
+    display: flex;
+  }
+  .signup button {
+    display: block;
+  }
+
+  .hero > h1 {
+    font-size: 3.5rem;
+  }
+}
