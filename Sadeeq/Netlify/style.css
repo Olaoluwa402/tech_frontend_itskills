@@ -38,7 +38,7 @@ header {
 }
 .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -148,6 +148,7 @@ h3 {
     border-radius: 18px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
+
 
 .image {
     border-radius: 18px 18px 0 0;
@@ -339,5 +340,20 @@ input[type=email] {
     .agency, .partner, .paid, .free{
         width: 450px;
         padding-left: 4px;
+    }
+}
+
+@media (min-width: 1175px) {
+    .request {
+        width: 1300px;
+    }
+
+    h3 {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+    .agency, .partner, .paid, .free{
+        width: 600px;
     }
 }
