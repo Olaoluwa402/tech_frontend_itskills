@@ -1,0 +1,60 @@
+*{
+    margin: 0 0;
+}
+
+.myself {
+    overflow-x: auto;
+    min-width: 50%;
+    height: 100vh;
+    padding: 20px 20px; 
+    align-items: center;
+}
+
+.myself table {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-collapse: collapse;
+}
+
+.myself table th {
+    padding: 20px;
+    border: 0.3px outset rgb(54, 51, 51);
+    font-size: large;
+    color: aliceblue;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.myself table thead {
+    height: 100px;
+    background-color: rgb(29, 48, 82);
+    text-align: center;
+}
+
+.myself table td {
+    border: 0.3px solid black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200px;
+    font-size: large;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+ .images{
+    width: 20px;
+    height: 20px;
+ }
+
+ /* {
+ /*   height: 15px;
+    width: 15px; */
+*/
+
+.myself table tbody tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.myself table tbody tr:nth-child(odd) {
+    background-color: azure;
+}
+    
