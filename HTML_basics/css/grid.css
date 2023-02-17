@@ -1,10 +1,15 @@
 .grid{
+  min-height: 80vh;
   display: grid;
   gap:20px;
-  grid-template-columns: 1fr;
-  /* grid-template-rows: 150px 100px 100px 150px 200px; */
+  justify-content: center;
+  /* align-items: end; */
+  align-content: center;
+  grid-template-columns: 200px;
+  background-color: black;
   /* grid-auto-rows: minmax(80px, auto);  */
-  grid-template-rows: minmax(80px, auto);
+  grid-auto-rows: minmax(80px, auto);
+  /* grid-template-rows: 150px 100px 100px 150px 200px; */
 
   grid-template-areas: 'nav'
   'sidebar'
@@ -60,7 +65,7 @@
 
 @media (min-width:680px){
   .grid{
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 200px 250px;
     grid-template-areas: 'nav nav'
                        'sidebar main'
                        'footer footer'
