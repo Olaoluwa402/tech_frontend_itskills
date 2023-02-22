@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+.body{
+box-sizing: border-box;
+height: 100vh;
+}
+.context{
+    display: flex;
+    background-color: rgb(2, 1, 14);
+    justify-content: space-between;
+    width: 80%;
+    height: 70vh;
+    margin: 5% auto;
+    color: white;
+    padding: 80px;
+    
+}
+
+.logo{
+    margin-left: 20px;
+    padding: 20px;
+    background-color: rgba(46, 44, 44, 0.691);
+    border-radius: 50%;
+    width: 25%;
+    height: 65%;
+}
+
+.logo img{
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    margin-left: 23%;
+
+    
+}
+
+.input{
+    margin-top: 20px;
+}
+
+.input > input {
+    padding: 5px;
+    width: 70%;
+    border-radius: 5px;
+    outline: none;
+    border: none
+}
+
+.input > button{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.input > button:hover{
+    background-color: orange;
+}
+
+h3 {
+    margin-top: 40px;
+
+}
+
+
+.author {
+    margin-left: 5%;
+    text-align: center;
+}
+
+.Ikenga {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.amend{
+    position: relative;
+    height: 40px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 15px;
+
+}
+
+.amend > p{
+    font-size: 0.75rem;
+    color: white;
+    flex-direction: flex-en;
+}
+
+.amend > h4 {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.hero2{
+    color: black;
+    font-size: 2.5rem;
+    box-sizing: border-box;
+    background-color: bisque;
+    background-image: url();
+}

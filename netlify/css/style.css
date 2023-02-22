@@ -12,8 +12,9 @@
   --seagreen80: #a1dad5;
 }
 
-a {
+.a {
   text-decoration: none;
+  list-style: none;
 }
 
 .advert {
@@ -63,18 +64,21 @@ a {
 .navigation > .leftNav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
+.navigation > .leftNav > ul > a > li{
+  justify-content: space-between;
+  align-items: center;
+} 
 
 .navigation > .leftNav > ul {
   display: none;
-  align-items: center;
   list-style: none;
   margin-left: 20px;
 }
 
-.navigation > .leftNav > ul > li {
-  margin-right: 8px;
-}
+
 .navigation > .leftNav > ul > li:hover {
   border: 2px solid var(--primary80);
   padding: 5px;
