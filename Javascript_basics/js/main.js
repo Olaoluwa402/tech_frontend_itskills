@@ -185,3 +185,156 @@ log(fullName, "full name");
 //2. using template literal
 const fullNameFromLiteral = `My name is ${firstName} ${lastName}`;
 log(fullNameFromLiteral, "fullName literal");
+
+// Escape sequences i strings
+//1. newline
+
+const newLine = "My name is John \nstart this text from the next line";
+console.log(newLine);
+
+const tab =
+  "My name is John \n\tstart this text from the next line ad indent with 8spaces";
+console.log(tab);
+
+const backslash = "My name is John\\shade this holds a backslash";
+console.log(backslash);
+
+// const singleQuote = 'My name is John. this bird's';
+// console.log(singleQuote);
+
+//String Methods
+
+//1.Length
+const lstr = "Javas cript";
+const len = lstr.length;
+log(len, "length");
+
+//applicatio of length
+for (let i = 0; i < len; i++) {
+  console.log(lstr[i]);
+}
+
+2; //accessing string characters using []
+//get s n lstr above
+const value1 = lstr[4];
+const value2 = lstr[lstr.length - 1];
+log(value1, value2, "values");
+
+//3. toUpperCase
+const lstrToUpper = lstr.toUpperCase();
+log(lstrToUpper, "lstrToUpper");
+
+const a1 = "Javascript";
+const a2 = "JAVAScript";
+log(a1.toUpperCase() == a2.toUpperCase());
+
+//4. toLowerCase
+const lstrToLower = lstr.toLowerCase();
+log(lstrToLower, "lstrToLower");
+
+//5.substr  - two argumets (startingIndex, noOfCharToSlice)
+
+const sub = lstr.substr(4, 6);
+log(sub, "sub");
+
+//5.substring  - two argumets (startingIndex, stopIndex - but minus the last index)
+const substring = lstr.substring(4, 6);
+log(substring, "substring");
+
+// application
+//shorten text f too long
+let txt =
+  "Lorem ipsum dolor sit amet consectetur,adipisicing elit. Quae consequuntur praesentium aut maiores repellat odit labore voluptas soluta corrupti quas? Pariatur in veniam ut obcaecati quod? Quibusdam optio repudiandae numquam!";
+const num = 33;
+if (txt.length > num) {
+  txt = txt.substr(0, num) + "...";
+}
+
+log(txt, "txt");
+
+//6. split method - splits a string at a specified place ad returns an array.
+const lstrSplit = lstr.split();
+const lstrSplit2 = lstr.split(" ");
+const lstrSplit3 = "John, James, Philip".split(",");
+log(lstrSplit, "lstrSplit");
+log(lstrSplit2, "lstrSplit2");
+log(lstrSplit3, "lstrSplit3");
+
+//application - asign 5 to John, 10 to James, 15 to Philip
+const asignValues = "John, James, Philip".split(",");
+
+let obj = [];
+for (let i = 0; i < asignValues.length; i++) {
+  const current = asignValues[i].toLowerCase().trim();
+
+  if (current == "John".toLowerCase()) {
+    obj.push({ John: 5 });
+  } else if (current == "James".toLowerCase()) {
+    obj.push({ James: 10 });
+  } else if (current == "Philip".toLowerCase()) {
+    obj.push({ Philip: 15 });
+  }
+}
+
+log(obj, "obj");
+
+//7. trim() - removes trailing space at the beginning annd at the end of a string
+const trailingSpace = " I am coming ";
+const newWithoutSpace = trailingSpace.trim();
+log(trailingSpace, "trailingSpace");
+log(newWithoutSpace, "withoutSpace");
+
+//8. includes - checks if a substring is present in a string
+
+const subst = "javascript is easy to learn";
+const checkSub = subst.includes("easyy");
+
+//application
+if (checkSub) {
+  log("easy is present");
+} else {
+  log("Not present");
+}
+
+//9.replace - takes two parameters, the old substring and the new substring
+const replaceText = "javascript is easy to learn";
+
+//check that substring is present before replacement usng includes
+let keyword = "john";
+let replaceValue = "python";
+if (replaceText.includes(keyword)) {
+  console.log(replaceText.replace(keyword, replaceValue));
+} else {
+  log(replaceText);
+}
+
+//10. charAt - takes index and returns the value at the index
+
+const chatText = "Javascript";
+log(chatText.charAt(0), "charAT");
+
+//challenge - write a functiion that capitalizes a string
+
+function capitalize(str) {
+  const finalResult =
+    str.charAt(0).toUpperCase() + str.substr(1, str.length - 1);
+  return finalResult;
+}
+
+const resu = capitalize("python");
+
+log(resu, "result");
+
+//11. charCodeAt - takes in index annd returns the character code of the value at that index
+const charCodeText = "Javascript";
+log(charCodeText.charCodeAt(0));
+
+//12. indexOf - takes in substring and returns the index if present else it returns -1
+
+let indexText = "Javascript is easy";
+let keyword2 = "Javascript";
+if (indexText.indexOf(keyword2) != -1) {
+  console.log("test found");
+} else {
+  log("Not found");
+}
