@@ -1,0 +1,46 @@
+.headstyle{
+    width: 100vw;
+    height: 20%;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 20px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px ;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+padding: 15px;
+display: flex;
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+body{
+    position: relative;
+}
+.chat{
+    position: absolute;
+    border-radius: 100px;
+    right: 100px;
+    top: 20;
+}
+.lay{
+    background-image: url(../images/underground-shopping.jpg);
+    width: 100vw;
+    height: 1000px;
+}

@@ -1,4 +1,4 @@
-const { log } = console;
+const log = console.log.bind(console);
 //1. single line comments
 const comment = "comment"; //this ia a comment
 //2. multiple lie comments
@@ -6,6 +6,7 @@ const comment = "comment"; //this ia a comment
 this is a ultiple lie commenet
 this is a ultiple lie commenet
 */
+
 
 // data types - primitive
 //1. string

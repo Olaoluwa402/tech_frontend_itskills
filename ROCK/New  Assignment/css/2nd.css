@@ -1,0 +1,53 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+background-color: blueviolet;
+height: 40px;
+display: flex;
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+}
+.navbar ul{
+    display: flex;
+    padding: 10px;
+}
+.navbar li{
+list-style: none;
+margin-left: 30px;
+}
+.content{
+    align-items: left;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+}
+.Eclass {
+    color: blueviolet;
+    font-size: 50px;
+}
+.aym {  
+    font-size: 50px;
+}
+.let{
+    font-size: 40px;
+}
+.app{
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+.rm{
+    border-color: blueviolet;
+    border-radius: 20px;
+}
+.sideimg{
+    border-radius: 41% 59% 36% 64% / 75% 81% 19% 25% ;
+}
