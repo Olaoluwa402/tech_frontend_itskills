@@ -239,7 +239,7 @@ const sub = lstr.substr(4, 6);
 log(sub, "sub");
 
 //5.substring  - two argumets (startingIndex, stopIndex - but minus the last index)
-const substring = lstr.substring(4, 6);
+h,const substring = lstr.substring(4, 6);
 log(substring, "substring");
 
 // application
@@ -312,7 +312,7 @@ if (replaceText.includes(keyword)) {
 //10. charAt - takes index and returns the value at the index
 
 const chatText = "Javascript";
-log(chatText.charAt(0), "charAT");
+log(chatText.charAt(0), " charAT");
 
 //challenge - write a functiion that capitalizes a string
 
