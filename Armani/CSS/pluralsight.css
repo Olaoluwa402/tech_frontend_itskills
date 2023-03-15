@@ -125,8 +125,6 @@ header { display: none;} */
 @media (min-width: 700px) {
 
     .upperhead { visibility: visible; }
-
-    header {visibility: visible;}
     
     .hamburger {display: none;}
 
@@ -190,7 +188,6 @@ header { display: none;} */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 350px;
  }
 
  .subheader ul li {
@@ -199,8 +196,8 @@ header { display: none;} */
  }
 
  .buttons {
+
     background-color: aqua;
-    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,13 +206,12 @@ header { display: none;} */
 
  .buttons button {
     color: rgb(255, 255, 255);
-    width: 180px;
     height: 40px;
     border-radius: 20px;
     font-weight: 600;
     border-color: rgb(219, 109, 255);
     background-color: rgb(47, 8, 84);
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
  }
 
  .header {
