@@ -16,7 +16,7 @@ this is a ultiple lie commenet
 `Sade` //backticks or string literals
 */
 
-//1.Number
+//1.Numbe
 /*
 20  //integer
 29.28 //float
@@ -40,12 +40,12 @@ console.log(typeof a);
 
 const data = [1, 2, 4, "john", "peter"];
 const result = data.map((item) => {
-  let modified = item;
-  if (typeof item == "string") {
-    modified = item.toUpperCase();
-  }
+    let modified = item;
+    if (typeof item == "string") {
+        modified = item.toUpperCase();
+    }
 
-  return modified;
+    return modified;
 });
 
 console.log(result, "result");
@@ -61,7 +61,7 @@ var f = "James";
 //let  - allow you to re-asign a value to a variable without redeclaring the variable
 let letA = 30;
 if (true) {
-  letA = 50; //re-asiging of a value to  variable
+    letA = 50; //re-asiging of a value to  variable
 }
 
 //const - never allows you to re-assign or re-declare
@@ -111,16 +111,16 @@ const dPre = [1, 2, "john", true]; //an array
 
 /* non primitive */
 const objOne = {
-  firstName: "John",
-  lastName: "James",
-  friends: ["dayo", "moyo"],
+    firstName: "John",
+    lastName: "James",
+    friends: ["dayo", "moyo"],
 };
 
 objOne["firstName"] = "Prince";
 const objTwo = {
-  firstName: "John",
-  lastName: "James",
-  friends: ["dayo", "moyo"],
+    firstName: "John",
+    lastName: "James",
+    friends: ["dayo", "moyo"],
 };
 /*end of non primitive */
 console.log(objOne);
@@ -138,7 +138,7 @@ console.log(Math, "inbuit js method");
 
 //what the object is like
 const MathMy = {
-  PI: 3.124,
+    PI: 3.124,
 };
 
 //1. PI - gives the PI constant
@@ -194,7 +194,7 @@ const newLine = "My name is John \nstart this text from the next line";
 console.log(newLine);
 
 const tab =
-  "My name is John \n\tstart this text from the next line ad indent with 8spaces";
+    "My name is John \n\tstart this text from the next line ad indent with 8spaces";
 console.log(tab);
 
 const backslash = "My name is John\\shade this holds a backslash";
@@ -212,7 +212,7 @@ log(len, "length");
 
 //applicatio of length
 for (let i = 0; i < len; i++) {
-  console.log(lstr[i]);
+    console.log(lstr[i]);
 }
 
 2; //accessing string characters using []
@@ -245,10 +245,10 @@ log(substring, "substring");
 // application
 //shorten text f too long
 let txt =
-  "Lorem ipsum dolor sit amet consectetur,adipisicing elit. Quae consequuntur praesentium aut maiores repellat odit labore voluptas soluta corrupti quas? Pariatur in veniam ut obcaecati quod? Quibusdam optio repudiandae numquam!";
+    "Lorem ipsum dolor sit amet consectetur,adipisicing elit. Quae consequuntur praesentium aut maiores repellat odit labore voluptas soluta corrupti quas? Pariatur in veniam ut obcaecati quod? Quibusdam optio repudiandae numquam!";
 const num = 33;
 if (txt.length > num) {
-  txt = txt.substr(0, num) + "...";
+    txt = txt.substr(0, num) + "...";
 }
 
 log(txt, "txt");
@@ -266,15 +266,15 @@ const asignValues = "John, James, Philip".split(",");
 
 let obj = [];
 for (let i = 0; i < asignValues.length; i++) {
-  const current = asignValues[i].toLowerCase().trim();
+    const current = asignValues[i].toLowerCase().trim();
 
-  if (current == "John".toLowerCase()) {
-    obj.push({ John: 5 });
-  } else if (current == "James".toLowerCase()) {
-    obj.push({ James: 10 });
-  } else if (current == "Philip".toLowerCase()) {
-    obj.push({ Philip: 15 });
-  }
+    if (current == "John".toLowerCase()) {
+        obj.push({ John: 5 });
+    } else if (current == "James".toLowerCase()) {
+        obj.push({ James: 10 });
+    } else if (current == "Philip".toLowerCase()) {
+        obj.push({ Philip: 15 });
+    }
 }
 
 log(obj, "obj");
@@ -292,9 +292,9 @@ const checkSub = subst.includes("easyy");
 
 //application
 if (checkSub) {
-  log("easy is present");
+    log("easy is present");
 } else {
-  log("Not present");
+    log("Not present");
 }
 
 //9.replace - takes two parameters, the old substring and the new substring
@@ -304,9 +304,9 @@ const replaceText = "javascript is easy to learn";
 let keyword = "john";
 let replaceValue = "python";
 if (replaceText.includes(keyword)) {
-  console.log(replaceText.replace(keyword, replaceValue));
+    console.log(replaceText.replace(keyword, replaceValue));
 } else {
-  log(replaceText);
+    log(replaceText);
 }
 
 //10. charAt - takes index and returns the value at the index
@@ -317,9 +317,9 @@ log(chatText.charAt(0), "charAT");
 //challenge - write a functiion that capitalizes a string
 
 function capitalize(str) {
-  const finalResult =
-    str.charAt(0).toUpperCase() + str.substr(1, str.length - 1);
-  return finalResult;
+    const finalResult =
+        str.charAt(0).toUpperCase() + str.substr(1, str.length - 1);
+    return finalResult;
 }
 
 const resu = capitalize("python");
@@ -335,7 +335,7 @@ log(charCodeText.charCodeAt(0));
 let indexText = "Javascript is easy";
 let keyword2 = "Javascript";
 if (indexText.indexOf(keyword2) != -1) {
-  console.log("test found");
+    console.log("test found");
 } else {
-  log("Not found");
+    log("Not found");
 }
