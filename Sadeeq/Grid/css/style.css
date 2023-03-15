@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 190px 400px 250px 250px;
+    grid-template-areas: "nav"
+                        "header"
+                        "article"
+                        "ads"
+                        "footer";
+}
+
+.griditem {
+    background-color: greenyellow;
+}
+
+.gridtemp-1 {
+    grid-area: nav;
+}
+
+@media (min-width: 680px) {
+    .grid {
+        grid-template-columns: 100px 1fr;
+        grid-template-areas: "nav header"
+                        "nav article"
+                        "nav ads"
+                        "nav footer";
+    }
+}

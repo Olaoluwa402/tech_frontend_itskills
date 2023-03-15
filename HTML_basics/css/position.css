@@ -1,0 +1,71 @@
+.fixed {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+
+  position: fixed;
+  /* top: 0;
+  right: 0; */
+  /* right: 0;
+  bottom: 0; */
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background-color: antiquewhite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100px;
+  background-color: violet;
+}
+
+.relative_absolute {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 400px;
+  background-color: black;
+  width: 350px;
+  height: 350px;
+}
+
+.relative_absolute h3 {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  color: white;
+}
+
+.cart {
+  position: relative;
+}
+
+.cartItemumber {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  height: 15px;
+  width: 15px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart .fa {
+  font-size: 30px;
+  color: brown;
+}

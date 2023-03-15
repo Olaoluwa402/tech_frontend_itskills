@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input[type=button] {
+    background-color: #2860f1;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    color: white;
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.advert {
+    background-color: #2860f1;
+    color: white;
+    text-align: center;
+    height: 40px;
+    align-items: center;
+}
+
+.advert a{
+    color: white;
+    text-decoration: underline;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar{
+    position: relative;
+}
+.bar > ul {
+    display: none;
+    list-style: none;
+}
+  
+.bar ul li {
+    margin-right: 30px;
+}
+  
+.bar ul li a {
+    text-decoration: none;
+}
+  
+.bar ul li a:hover {
+    border: solid #2250F4;
+    border-radius: 15px;
+    padding: 10px;
+}
+ 
+.navigation .sidebar {
+    display: none;
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    color: aliceblue;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+}
+  
+.navigation .sidebar ul {
+    display: block;
+}
+  
+.navigation .sidebar ul li {
+    margin-bottom: 15px;
+}
+  
+/* .navigation .sidebar ul li a {
+    color: aliceblue;
+} */
+  
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#contact, #signup {
+    display: none;
+} 
+
+.help {
+    background-color: #2250F4;
+    height: 240px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat {
+    background-image: url(./images/chat2.png) ;
+    background-position: 265px 21px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: #BFFDE7;
+    border: none;
+    padding-right: 20px;
+    
+    width: 300px;
+    height: 60px;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: black;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+.request {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.image {
+    border-radius: 18px 18px 0 0;
+    background-image: linear-gradient(#59e2e0, #2860f1);
+}
+
+.request img {
+    width: 300px;
+    height: 130px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.demo {
+    width: 300px;
+    margin-top: 10px;
+    border: white;
+    padding-left: 20px;
+}
+
+.network, .support{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agency, .partner, .paid, .free{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    border-radius: 18px;
+    margin: 10px auto;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.up-to-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=email], #subscribe{
+    width: 280px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+input[type=email] {
+    border-radius: 8px;
+}
+
+#subscribe {
+    background-color: #BFFDE7;
+    color: black;
+}
+
+@media (min-width: 680px) {
+    .request {
+        width: 600px;
+        height: 400px;
+    }
+
+    .demo {
+        width: 600px;
+        height: 200px;
+    }
+
+    .request img {
+        width: 600px;
+        height: 200px;
+    }
+
+    .network, .support{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .agency, .partner, .paid, .free{
+        width: 320px;
+    }
+
+    .mail {
+        flex-direction: row;
+    }
+
+    #subscribe {
+        width: 120px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1040px) {
+    .navigation {
+        /* display: flex; */
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+
+    .logo_bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #signup {
+        background-color: #2250F4;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #signup:hover {
+        background-color: blue;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search, .search a {
+        padding: 0 10px;
+    }
+
+    #contact, #signup {
+    display: block;
+    } 
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    h3 {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .request {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        height: 300px;
+        background-image: linear-gradient(to top right, white 70%, #2860f1);
+    }
+
+    .request img {
+        width: 500px;
+        height: 200px;
+        background-image: ;
+    }
+
+    .demo p{
+        width: 400px;
+
+    }
+
+    .image {
+        background-image: none
+    }
+
+    .network, .support{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .agency, .partner, .paid, .free{
+        width: 450px;
+        padding-left: 4px;
+    }
+}
+
+@media (min-width: 1175px) {
+    .request {
+        width: 1300px;
+    }
+
+    h3 {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+    .agency, .partner, .paid, .free{
+        width: 600px;
+    }
+}

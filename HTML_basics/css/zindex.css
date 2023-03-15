@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+}
+
+.circle_1 {
+  position: absolute;
+  top: 30px;
+  left: 400px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 100;
+}
+
+.circle_2 {
+  position: absolute;
+  top: 30px;
+  left: 400px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 10;
+}
+
+.circle_3 {
+  position: absolute;
+  left: 150px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: violet;
+  z-index: -1;
+}

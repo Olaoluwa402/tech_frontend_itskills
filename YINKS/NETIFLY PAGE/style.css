@@ -1,0 +1,444 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  min-height: 1200px;
+  width: 100%; 
+}
+
+img{
+  width: 100%;
+}
+/* advert link starts */
+.advert-link{
+  width: 100%;
+  background-color: #1241ea;
+  height: 50px;
+  display: flex;
+ justify-content:center;
+ position: relative;
+ align-items: center; 
+}
+
+.advert-link  h3{
+  color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.closeBar{
+  position: absolute;
+  right: 2%;
+}
+
+.closeBar h4{
+  background-color: rgb(123, 142, 142);
+  color: blue;
+  font-size: 18px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* advert link ends */
+
+/* start navigation */
+
+.logo-img{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img span{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+nav{
+  position: sticky;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li{
+  font-size: 16px;
+  list-style: none;
+  padding: 10px 10px;
+  color: rgb(19, 11, 11);
+  font-family: sans-serif;
+}
+
+nav ul li:hover{
+  border: 2px solid #2250f4;
+}
+.menuBar{
+  width: 35px;
+  height: 35px;
+  display: none;
+}
+
+
+nav ul a{
+  text-decoration: none;
+}
+
+.sign-button{
+  background-color:#2250f4;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* navigation ends */
+  .advert-link{
+  display: none;
+  }
+nav ul li{
+  display: none;
+}
+
+nav .left-list ul li{
+  display: block;
+  font-size: 20px; 
+}
+
+.contact{
+  display: none;
+}
+.sign-button{
+display: none;
+}
+nav{
+  justify-content: space-between;
+}
+
+.menuBar{
+  display: block;
+}
+.icons{
+  display: none;
+}
+
+.assistance-section{
+  background-color: #1241ea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.assistance-section h1{
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;  
+}
+.assistance-section .message-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #59e2e0;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.assistance-section a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(9, 4, 4);
+}
+
+.assistance-section .message{
+  position: absolute;
+  font-size: 15px;
+  right: 2%;
+}
+
+/* sale section start */
+
+.sales-section{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+   flex-direction: column;
+  justify-content: center;
+}
+
+.sales-section .img-div{
+  background-image: linear-gradient(#59e2e0,#2860f1);
+  border-radius: 5px;
+  width: 90%; 
+}
+
+.sales-section .request-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+   padding: 50px;
+   box-shadow: 1px 1px 1px 1px; 
+   width: 90%; 
+}
+
+ .sales-section .request-div .icon{
+  color: #2250f8;
+  font-size: 25px;
+  margin: 20px;  
+}
+
+ .sales-sectionn.request-div h1{
+  font-size: 20px;
+  margin: 40px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(41, 32, 32);
+}
+.sales-section .request-div h3{
+  line-height: 30px;
+  color: rgb(101, 90, 90);
+  margin-bottom: 35px;
+}
+.sales-section .request-div a{
+  background-color: #2250f4;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 auto 0  0 ;
+
+}
+
+.sales h6{
+  margin: 60px 0  5px 80px;
+  font-size:13px ;
+  font-family: sans-serif;
+}
+
+/* sales section ends */
+
+/* partner secton start */
+.partner-network h4{
+  margin: 30px 0  5px 20px;
+  font-size:13px ;
+  font-family: sans-serif;
+}
+.partner-section{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+   flex-direction: column;
+  justify-content: center;
+  gap:30px
+}
+
+.partner-section .request-demo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+   padding: 30px;
+   box-shadow: 1px 1px 1px 1px; 
+   width: 90%; 
+ 
+}
+.partner-section .request-demo .icon{
+  color: #2250f8;
+  font-size: 25px;
+  margin: 20px; 
+}
+
+.partner-section .request-demo a{
+  background-color: #2250f4;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 auto 0  0 ;
+}
+.partner-section .request-demo h1{
+  font-size:18px;
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(41, 32, 32);
+}
+.partner-section .request-demo h3{
+  line-height: 30px;
+  color: rgb(101, 90, 90);
+  margin-bottom: 35px;
+}
+/* partner section ends */
+/* support section starts */
+
+.support h4{
+  margin: 30px 0  5px 20px;
+  font-size:17px ;
+  font-family: sans-serif;
+}
+.support-section{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+   flex-direction: column;
+  justify-content: center;
+  gap:30px 
+}
+
+.support-section .help-section{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #fff;
+ padding: 50px;
+ box-shadow: 1px 1px 1px 1px; 
+ width: 90%; 
+}
+.support-section .help-section h1{
+  font-size:18px;
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(41, 32, 32);
+}
+.support-section .help-section h3{
+  line-height: 30px;
+  color: rgb(101, 90, 90);
+  margin-bottom: 35px;
+}
+
+.support-section .help-section a{
+  background-color: #2250f4;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 auto 0  0 ;
+}
+
+.support-section .help-section .icon{
+  color: #2250f8;
+  font-size: 25px;
+  margin: 20px;  
+}
+/* support section ends */
+
+/* details section starts */
+.details-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+.details-section img{
+  width: 150px;
+  height: 150px;
+  margin-top: 40px;
+}
+
+.details-section h3{
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.details-section .email-details{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.details-section .email-details input{
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+.details-section .email-details a{
+  background-color: #59e2e0;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 5px;
+  font-family: sans-serif;
+
+}
+/* section section ends */
+
+@media(min-width:1000px){
+  .advert-link{
+    display: block;
+    }
+
+  nav ul li{
+    display: block;
+  }
+
+  .menuBar{
+    display: none;
+  }
+
+  .contact{
+    display: block;
+  }
+  .sign-button{
+  display: block;
+  }
+
+  
+.sales-section{
+   flex-direction: row-reverse;
+   width: 80%; 
+   margin: 20px auto;
+}
+
+.sales-section .img-div{
+  width: 100%; 
+  height: 330px;
+  background-image: linear-gradient(#fff 90deg,#2860f1);
+}
+
+.sales h6{
+ margin: 5rem  0 0 12rem;
+  font-size:15px ;
+}
+
+
+.partner-network h4{
+  margin: 5rem  0 2rem 12rem;
+  font-size:15px ;
+}
+.partner-section{
+  margin: 0 auto;
+   flex-direction: row;
+  justify-content: center;
+  width: 80%;
+}
+
+.support h4{
+margin: 5rem  0 2rem 12rem;
+font-size:15px ;
+}
+.support-section{
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+}

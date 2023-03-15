@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 500vh;
+    /* position: relative; */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #C8C0B5;
+    position: fixed;
+    top: 10px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul li {
+    list-style: none;
+    padding: 0 25px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 15px; */
+}
+
+.cartnum {
+    background-color: brown;
+    color: white;
+    margin: 5px 1px 0;
+    text-align: center;
+    /* position: absolute; */
+    width: 20px;
+    height: 20px;
+}
+
+.message_us {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    bottom: 100px;
+    right: 110px;
+}
+
+.chat {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+}
+
+.message_us i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}

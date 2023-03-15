@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 500vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index:1;
+}
+
+.navigation {
+    background-color: #242145;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    padding: 0 15px;
+}
+
+.top-nav {
+    display: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+}
+.logo > ul {
+    display: none;
+    list-style: none;
+}
+  
+
+ 
+.navigation .sidebar {
+    display: none;
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    color: aliceblue;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+}
+  
+.navigation .sidebar ul {
+    display: block;
+}
+  
+.navigation .sidebar ul li {
+    margin-bottom: 15px;
+}
+  
+/* .navigation .sidebar ul li a {
+    color: aliceblue;
+} */
+
+.menu:hover, .logo:hover, .close:hover, .cancel:hover, .search:hover {
+    cursor: pointer;
+}
+  
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#firstlogo, #banner-logo, #secondlogo{
+    max-width: 100%;
+    height: 20px;
+}
+
+#secondlogo, .search{
+    display: none;
+}
+
+/* #image {
+    background-color: #242145;
+} */
+
+.fa {
+    color: white;
+}
+
+.hero {
+    background-image: url(../images/q1-40off-mobile-banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #cedaec;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+h2 {
+    font-size: 50px;
+    color: #130f25;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.text-first {
+    font-size: 14px;
+    color: #130f25;
+    line-height: 1.9;
+}
+
+.subtitle-text {
+    font-size: 14px;
+    color: #ff1675;
+    line-height: 2;
+}
+
+.savenow {
+    border: none;
+    border-radius: 999px;
+    background-color: #4A33D1;
+    padding: 14px 32px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+.cancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (min-width: 1040px) {
+    .top-nav {
+        display: block;
+        background-color: #1b1834;
+    }
+
+    .topnavflex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        margin: 0 20px;
+        width: 100%;   
+    }
+
+
+    .signin {
+        border: none;
+        border-left: 1px solid rgba(149,149,149,0.5);
+        padding: 0 24px;
+        margin: 0 0 0 9px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+
+        font-size: 17px;
+        line-height: 1.4;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .fa-caret-down {
+        margin-left: 10px;
+    }
+
+    #svg {
+        margin-right: 10px;
+    }
+
+
+    .navigation {
+        height: 85px;
+        color: #fff;
+    }
+
+    .search ul, .topnavflex ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search ul li, .topnavflex ul li{
+        margin: 0 20px;
+    }
+
+    .contact {
+        border: 2px solid #585fa2;
+        border-radius: 999px;
+        background: transparent;
+        color: #fff;
+    }
+    .contact, .try {
+        padding: 10px 35px;
+        font-size: 14px;
+    }
+        
+
+    .contact:hover {
+        background-color: #474b85;
+        cursor: pointer;
+    }
+
+    .try {
+        border: none;
+        border-radius: 999px;
+        background: #e7005e;
+        color: #fff;
+    }
+
+    .hero {
+        background-image: url(../images/q1-40off-desktop-banner-1.webp);
+    }
+    .banner {
+        flex-direction: row;
+        justify-content: space-around;
+        min-height: 85px;
+    }
+
+    #secondlogo, .search{
+        display: block;
+    }
+
+    #firstlogo {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .logo > ul {
+        display: block;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo ul li {
+        margin: 0 20px;
+    }
+      
+    .logo ul li a, .topnavflex ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .search ul li, .topnavflex ul li {
+        list-style: none;
+    }
+      
+}
+
+@media (min-width: 1175px) {
+    #secondlogo {
+        display: none;
+    }
+
+    #firstlogo {
+        display: block;
+    }
+}
