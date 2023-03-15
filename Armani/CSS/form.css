@@ -1,0 +1,50 @@
+/* .container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container form {
+    width: 100%;
+    margin: 0 auto;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formgroup {
+    padding: 10px;
+    align-items: center;
+
+}
+
+
+
+
+@media (min-width: 480px) {
+    .formgroup {
+     flex-direction: row;
+    }
+
+    .container form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    input :focus { background-color: rgb(244, 33, 33);}
+.search {
+    padding-left: 20px;
+    
+    
+}   
+
+}
+  */
+
+
+
+  /* <!--New Form Exercise--!> */
+
+  
