@@ -137,6 +137,36 @@ console.log(strrings)
 
 
 // ARRAY MOTHOD
+// fill
+const fills = Array();
+console.log(fills);
+const fiills = Array(8).fill("x");
+console.log(fiills);
+
+// concat
+const arry1 = ["what matter of love is this"];
+const arry2 = ['that i have greatly expirence']
+const arry3 = arry1.concat(arry2);
+console.log(arry3);
+
+// length
+const leenght = [1,2,3,4,5];
+const leenghy = leenght.length;
+console.log(leenghy);
+
+// indexOF
+const list = ["moji","tunde", "bayo", "linda", "tunde", "tunde"];
+const lista = list.lastIndexOf("tunde");
+console.log(lista);
+
+// array.isarray
+const arry5 = [1,2,3,4,5,6,7,8,];
+console.log(Array.isArray(arry5));
+ 
+// pop
+const po = ["banana", "mango", "orange", "pear"];
+  po.push()
+  console.log(po);
 
 // slice
 const arr1 =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
@@ -171,8 +201,28 @@ arry15[i];
 if(arry15[i]%2 === 0){
  even.push(arry15[i])
 }else{
-  odd.push(arry15[1])
+  odd.push(arry15[i])
 }
  }
 
- console.log(0dd)
+ console.log(odd)
+
+
+//  LOOP
+// for loop
+
+const loops = "love"
+for(let i = 0; loops.length < 5; i++){
+console.log(loops);
+}
+
+
+let numberss = [1,2,3,4,5];
+newn = [];
+const arrynumbers = (num) =>{
+  for(let i =0; i < num.length; i++){
+    newn.push(num[i]*2)
+  }
+  console.log(newn);
+  return newn;
+}
