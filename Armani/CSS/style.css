@@ -1,0 +1,194 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+
+}
+
+.navigation>ul {
+    display: none;
+}
+
+.navigation .sidebar {
+    display: none;
+    position: relative;
+    position: fixed;
+    color: aqua;
+    background-color: rgb(32, 17, 233);
+    height: 100vh;
+    width: 250px;
+
+}
+
+.menu {
+    cursor: pointer;
+
+}
+
+.logo {
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+
+
+ul li {
+    list-style: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.hero {
+    background-color: aqua;
+    background-image:url(../Images/head\ background.jpg);
+    width: 100px;
+    height: 450px;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    font-size: 16px;
+}
+
+.creative {
+    align-content: center;
+    padding: 40px;
+    font-size: 40px;
+}
+
+.programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+
+.w3 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin: 30px auto
+}
+
+.w3 h2 {
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    /* margin: 0 auto; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ .laptopside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: 600px;
+        width: 100%;
+        
+}
+
+.laptoptext {
+    width: 300px;
+    text-align: justify
+    
+}
+
+.laptoptext h2 {
+    padding-top: 30px;
+  
+        
+}
+
+.laptopitself h3 {
+    display: flex;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+.botton {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    
+}
+
+.laptopitself {
+    padding: 10px;
+}
+
+
+@media (min-width: 900px) {
+    .secondSection {
+
+        width: 100%;
+
+    }
+
+    .programs {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+   .laptopside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+   }
+
+
+
+}

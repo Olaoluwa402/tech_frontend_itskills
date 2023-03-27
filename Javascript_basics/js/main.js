@@ -239,7 +239,7 @@ const sub = lstr.substr(4, 6);
 log(sub, "sub");
 
 //5.substring  - two argumets (startingIndex, stopIndex - but minus the last index)
-const substring = lstr.substring(4, 6);
+h,const substring = lstr.substring(4, 6);
 log(substring, "substring");
 
 // application
@@ -312,7 +312,7 @@ if (replaceText.includes(keyword)) {
 //10. charAt - takes index and returns the value at the index
 
 const chatText = "Javascript";
-log(chatText.charAt(0), "charAT");
+log(chatText.charAt(0), " charAT");
 
 //challenge - write a functiion that capitalizes a string
 
@@ -333,9 +333,111 @@ log(charCodeText.charCodeAt(0));
 //12. indexOf - takes in substring and returns the index if present else it returns -1
 
 let indexText = "Javascript is easy";
-let keyword2 = "Javascript";
+let keyword2 = "a";
 if (indexText.indexOf(keyword2) != -1) {
   console.log("test found");
 } else {
   log("Not found");
 }
+
+//13. lastIndexOf - takes in substring and returns the index if present else it returns -1
+log(indexText.lastIndexOf(keyword2));
+
+//14. concat() - takes many strings and join them together to become a string
+
+const str1 = "john";
+const str2 = "Bayo";
+const str3 = "Precious";
+const arrnew = ["first", "second", "third"];
+const finalString = str1.concat(str2, str3, ...arrnew);
+log(finalString, "finalStr");
+
+//15. startsWith - takes in a substring and checks if the search
+//text starts with the entered substring
+
+const searchText = "food is ready";
+let args = "food is";
+const searchResult = searchText.startsWith(args);
+log(searchResult, "startsWith");
+
+const searchData = [
+  {
+    title: "How to cook jollof rice",
+    desc: "lorem ipsum",
+  },
+  {
+    title: "cook jollof rice",
+    desc: "lorem ipsum",
+  },
+  {
+    title: "How to cook jollof rice",
+    desc: "lorem ipsum",
+  },
+  {
+    title: "How to cook jollof rice",
+    desc: "lorem ipsum",
+  },
+  {
+    title: "jollof rice",
+    desc: "lorem ipsum",
+  },
+];
+
+//find article(s) using the search text provided
+
+let foundArtcles = [];
+
+for (let i = 0; i < searchData.length; i++) {
+  log(searchData[i]);
+  const data = searchData[i];
+  log(data, "data");
+  if (data.title.toLowerCase().startsWith("how to".toLowerCase())) {
+    foundArtcles.push(data);
+  }
+}
+
+log(foundArtcles, "foundArtcles");
+
+//16. endsWith
+const endWthSearchText = "food is ready";
+let argsEndWth = "ready";
+const searchResult2 = searchText.endsWith(argsEndWth);
+log(searchResult2, "endsWith");
+
+//17. search - Takes in a substring and returns the index of the first match
+const p1 = "food is ready";
+const p1result = p1.search("ready");
+if (p1result) {
+  log(`The item was found at position ${p1result}`);
+}
+
+//18. match - Takes in a substring and returns an array containg items found.
+//if nothng is found t returns null
+const p2 = "food is ready yes it is ready";
+const p2result = p2.match(/ready/gi); //'ready'
+if (p2result) {
+  log(p2result, "p2Result");
+}
+
+/* 
+repeat(): it takes a number as argument and it returns the repeated version of the string.
+*/
+
+const p3 = "love";
+log(p3.repeat(5));
+
+//data casting - convert from one data type to another
+const toBeConveretd = 15.113;
+
+//convert to interger
+const toInt = parseInt(toBeConveretd);
+log(toInt, "toInt");
+
+//convert to float
+const toFloat = parseFloat(toBeConveretd.toFixed(2));
+log(toFloat, "toFLoat");
+
+//convert to number
+const toNumber = parseFloat("20");
+log(typeof toNumber, "type");
+log(toNumber, "toNumber");
