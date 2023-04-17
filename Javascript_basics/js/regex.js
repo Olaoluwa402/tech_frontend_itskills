@@ -10,7 +10,7 @@ log(reg, "reg");
 const reg_2 = /spam/gi;
 
 const data_1 =
-  "Javascript is a programming language with powerful capabilities both o the web, mobile and desktop. Javascript is at per with Python";
+  "Javascript is a programming language with 2023, 19, 12 powerful capabilities both o the web, mobile and desktop. Javascript is at per with Python";
 
 //test that the data above contains javascript. ignore case
 const isPresent = /javascript/gi.test(data_1); //usig test method
@@ -50,3 +50,13 @@ log(search, "search");
 //replace every javascript foud
 const replace = data_1.replace(/javascript/gi, "Python");
 log(replace, "replace");
+
+const pattern_3 = /^javascript/gi; //starts with javascript
+const pattern_4 = /[^0-9]/gi; //not digit
+const result_2 = data_1.match(pattern_3);
+const result_3 = data_1.match(pattern_4);
+log(result_2, result_3, "reg");
+
+const pattern_5 = /\d+/g;
+const result_4 = data_1.match(pattern_5);
+log(result_4.join("-"), "reg");
