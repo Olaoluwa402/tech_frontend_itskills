@@ -18,7 +18,7 @@ class Person {
   }
 
   //static functino
-  static add(a) {
+  static addition(a) {
     return a + a;
   }
 
@@ -35,8 +35,8 @@ class Person {
 
 Person.prototype.course = "javascript";
 //every class must be instantiated in order to create an object fro the class
-const NoParameter = new Person("");
-log(NoParameter.getBooksFromStore());
+const NoParameter = new Person();
+log(NoParameter.getBooksFromStore(), "getBooksFromStore()");
 const Camsy = new Person("Camsy");
 const Rock = new Person("Rock");
 const Banji = new Person("Banji");
@@ -46,7 +46,7 @@ log(Rock, "b");
 log(Banji, "c");
 
 //static
-// log(ClassName.add(8), "static");
+// log(ClassName.addition(8), "static");
 
 //prototype
 log(Banji.course, "course");
