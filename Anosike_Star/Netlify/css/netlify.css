@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary100:#112caf;
+    --primary80:#2250f4;
+    --white100: #ffff;
+    --seagreen: #5cebdf
+}
+ .a{
+    text-decoration: none;
+ }
+
+.advert{
+    height: 50px;
+    background-color: var(--primary100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.advert{
+    color: var(--white100);
+    font-size: 0.75rem;
+}
+
+.advert > p > a{
+    text-decoration: none;
+    color:var(--white100);
+    font-size: 0.9rem;
+
+}
+.advert > p > a :hover{
+    text-decoration: underline;
+}
+
+.advert > i {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: var(--white100);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white100);
+    padding: 0 15px;
+}
+
+.navigation > .leftNav > ul{
+    display: none;
+    align-items: center;
+    list-style: none;
+    padding: 0 15px;
+}
+
+.navigation> .leftNav{
+    display: flex;
+    align-items: center;
+}
+.navigation > .leftNav > ul{
+    display: none;
+    align-items: center;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navigation > .leftNav > ul > li:hover{
+    border: 2px solid var(--primary80);
+    padding: 5px;
+    border-radius: 10px;
+}
+    .navigation > .rightNav{
+        display:flex;
+        align-items:center;
+    }
+
+    .navigation > .rightNav > ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .navigation > .rightNav > ul > li {
+        margin: 8px;
+    }
+
+    .navigation > .rightNav > ul > li:hover{
+        border: 2px solid var(--primary80);
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .Login Button,
+    .Signup button{
+        background-color: transparent;
+        outline: none;
+        border: none;
+    }
+
+    .Signup button{
+        display: none;
+    }
+
+
+    .hero > h1 {
+       font-size: 1.8rem;
+       font-weight: bolder;
+       margin: 20px;
+    }
+
+.hero button{
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    ba
+}
+
+.hero > button > span
+
+@media (min-width:520px){
+    .advert > p {
+      font-size: 1rem;
+    }
+}
+
+@media (min-width:768px){
+    .navigation > .leftNav > ul {
+        display: flex;
+    }
+    .Signup button{
+
+    }
+}

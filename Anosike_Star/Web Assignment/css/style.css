@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* globals */
+  img {
+    width: 100%;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  /* navigation style */
+  
+  .logo {
+    width: 100px;
+    height: 70px;
+    cursor: pointer;
+  }
+  
+  .menuBar {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .navigation {
+    height: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction: right;
+  }
+
+  .flex-container{
+    display:flex;
+    justify-content: space-between;
+    margin-inline-start: 1rem;
+
+  }
+  ul {
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-direction: right;
+  }
+  
+  .navigation ul li {
+    margin-right: 30px;
+    margin-inline-start: 20px;
+    padding: 10px;
+    font-size: 15px;
+    justify-content: space-between;
+    text-align: center;
+   gap: 10px;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20;
+
+  }
+  
+  .navigation ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .navigation span {
+    font-size: 12px;
+  }
+  
+  /* side Bar */
+  
+  .navigation .sideBar {
+    display: none;
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    color: aliceblue;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+  }
+  
+  .navigation .sideBar ul {
+    display: block;
+  }
+  
+  .navigation .sideBar ul li {
+    margin-bottom: 15px;
+  }
+  
+  .navigation .sideBar ul li a {
+    color: aliceblue;
+  }
+  
+  .closeSideBar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    /* sideBar ends */
+  }
+  
+  /* hero section */
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    /* height: calc(100vh - 90px); */
+    background-color: rgb(93, 47, 47);
+    background-image: url("../images/pexels-ann-poan-5797997.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* overlay */
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+  
+  .hero .creative {
+    color: #fff;
+    padding: 20px;
+    justify-content: space-between;
+    margin-right: top;
+    z-index: 2;
+  }
+  
+  .hero .creative h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    justify-items: space-between;
+  }
+  
+  .hero .creative p {
+    text-align: center;
+  }
+
+  .viewmore {
+    background-color: silver;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;}
+
+  /* Three section */
+  #threesection .thenews{
+    display: flex;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 20px;
+  }
+
+  #more h2 {
+    font-size: 30px;
+  }
+  #more{
+    font-size: 50px;
+    width: 30%;
+  }
+  #more p{
+    font-size: 10px;
+    margin: 20px 40px;
+  }
+  #more button{
+    padding: 20px 40px;
+    background-color: ;
+    width: 20%;
+  }
+
+  .whatwedo {
+    width: 50%;
+    margin: 100px auto;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: right;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 600px;
+    text-align: center;
+  }
+  
+  .services {
+    margin: 20px 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    height: 220px;
+    padding: 10px;
+    width: 250px;
+  }
+  
+  .services p {
+    text-align: justify;
+  }
+  
+  .iconContainer {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3497da;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  /* #threesection {
+    width: 20%;
+    padding-left:50px;
+    background-color: white;
+    padding: 30px;
+    padding-top: 30px;
+  } */
+  
+  /* hero ennds */
+  
+  /* resposive designn */
+  @media (min-width: 680px) {
+    .hero .creative p {
+      width: 480px;
+      font-size: 1.5rem;
+    }
+  
+    .hero .creative h1 {
+      font-size: 2.5rem;
+    }
+  
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 1040px) {
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .hero .creative p {
+      width: 680px;
+    }
+  
+    .navigation > ul {
+      display: flex;
+    }
+    .menuBar {
+      display: flex;
+    }
+  
+    .whatwedo {
+     display: flex;
+     margin: 0px auto;
+      width: 90%;
+      flex-wrap: wrap-reverse;
+      gap: 30px;
+      justify-content: flex-start;
+    }
+  }
+  #more button{
+    width: 50%;
+    padding:10px;
+    margin: 40px 30px;
+    border: solid gray;
+  }
+  #rest{
+    font-size: 40px;
+    margin: 20px 40px;
+
+  }
+  
+  .elite {
+    display: flex;
+  }
+
+  #libro {
+    display: flex;
+  }
