@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- local stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- local scripts -->
+
+    <title>Cart</title>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="container">
+      <!-- header section -->
+      <div class="advert"><h6>Advertisement!!!</h6></div>
+      <nav class="nav nav-header">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./collections.html">Collections</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li>
+            <a href="./cart.html"
+              ><div class="cart-container">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <div class="cart-count">0</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <h1>APP-A</h1>
+      </header>
+      <!-- End of header -->
+
+      <!-- main section -->
+      <div class="container">
+        <!-- alert -->
+        <div class="alert">
+          <p id="alert-msg">Hello this is an alert</p>
+        </div>
+        <!-- End of alert -->
+        <!-- cart -->
+        <div class="cart">
+          <h2 class="title cart-items-header">CART</h2>
+          <div class="tableWrapper">
+            <table>
+              <thead>
+                <th>ITEM</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <h4 class="cart-total"></h4>
+          <button class="cart-item-purshase">PURCHASE</button>
+        </div>
+
+        <!-- End of cart -->
+      </div>
+      <!-- End of main -->
+
+      <footer>
+        <h2 class="footer-logo">APP-A</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- End of wrapper -->
+    <script src="./js/cart.js"></script>
+  </body>
+</html>
