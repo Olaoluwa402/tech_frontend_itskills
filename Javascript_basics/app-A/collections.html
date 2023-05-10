@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- local stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- local scripts -->
+
+    <title>Collections - APP-A</title>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="container">
+      <!-- header section -->
+      <div class="advert"><h6>Advertisement!!!</h6></div>
+      <nav class="nav nav-header">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./collections.html">Collections</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li>
+            <a href="./cart.html"
+              ><div class="cart-container">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <div class="cart-count">0</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <h1>App-A</h1>
+        <div class="">
+          <button class="add-item">ADD ITEM</button>
+        </div>
+      </header>
+      <!-- End of header -->
+
+      <!-- main section -->
+      <div class="container">
+        <h1 class="title">Collections</h1>
+
+        <!-- alert -->
+        <div class="alert"></div>
+        <!-- End of alert -->
+
+        <!-- add item modal -->
+        <div class="add-modal">
+          <form>
+            <h2>Add Item</h2>
+            <input type="text" placeholder="Title" id="title" />
+            <input type="number" placeholder="price" id="price" />
+            <input type="text" placeholder="image url" id="imageUrl" />
+            <textarea name="" id="desc" cols="20" rows="5"></textarea>
+            <button id="submitItem">ADD</button>
+
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </form>
+        </div>
+        <!-- end of add item modal   -->
+
+        <div class="collection">
+          <!-- <div class="collection-item">
+            <div style="width: 100%; height: 300px">
+              <img
+                src="./images/hearing-aid-5.jpg"
+                alt="items"
+                class="collection-img"
+              />
+            </div>
+
+            <h4 class="collection-items-title">item 0ne</h4>
+            <div class="collection-items-footer">
+              <span class="collection-items-price">3000</span>
+              <button class="btn collection-items-btn">ADD TO CART</button>
+            </div>
+          </div> -->
+
+          <!-- <div class="collection-item">
+            <div style="width: 100%; height: 300px">
+              <img
+                src="./images/hearing-aid-3.webp"
+                alt="items"
+                class="collection-img"
+              />
+            </div>
+
+            <h4 class="collection-items-title">item 0ne</h4>
+            <div class="collection-items-footer">
+              <span class="collection-items-price">3000</span>
+              <button class="btn collection-items-btn">ADD TO CART</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- End of main -->
+
+      <footer>
+        <h2 class="footer-logo">APP-A</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- End of wrapper -->
+    <script src="./js/collection.js"></script>
+  </body>
+</html>
