@@ -8,6 +8,9 @@ function ready() {
   //display products if any from local stroage
   displayProducts();
 
+  //update cart count
+  displayNoOfItemsInCart();
+
   //open add modal
   const openAddItemModalBtn = document.getElementsByClassName("add-item")[0];
   openAddItemModalBtn.addEventListener("click", openModal);
@@ -19,6 +22,61 @@ function ready() {
   //add item
   const addItemBtn = document.getElementById("submitItem");
   addItemBtn.addEventListener("click", addItemHandler);
+
+  //add to cart button
+  const addToCartBtn = document.getElementsByClassName("collection-items-btn");
+
+  for (let i = 0; i < addToCartBtn.length; i++) {
+    const currentBtn = addToCartBtn[i];
+    currentBtn.addEventListener("click", addToCartHandler);
+  }
+}
+
+function addToCartHandler(e) {
+  const currentBtn = e.target;
+  const collectionItem = currentBtn.parentElement.parentElement;
+  const title = collectionItem.getElementsByClassName(
+    "collection-items-title"
+  )[0].textContent;
+
+  const price = collectionItem.getElementsByClassName(
+    "collection-items-price"
+  )[0].textContent;
+
+  const priceSymbolTrailingSpaceAndCommaRemoved = +price
+    .slice(4, price.length - 3)
+    .replace(",", "");
+
+  const cartItem = {
+    title,
+    price: priceSymbolTrailingSpaceAndCommaRemoved,
+    qty: 1,
+  };
+
+  addToCart(cartItem);
+}
+
+function addToCart(cartItem) {
+  const cartItems = getStoreCartItems();
+
+  //create a copy opf the cart store
+  const cartItemsCopy = [...cartItems];
+
+  //push the new item into cartItemsCopy
+  cartItemsCopy.push(cartItem);
+
+  //update local storage with the neww record
+  localStorage.setItem("cart", JSON.stringify(cartItemsCopy));
+
+  //update cart count
+  displayNoOfItemsInCart();
+
+  alertBox("Item added to cart", "success");
+}
+
+function displayNoOfItemsInCart() {
+  const items = getStoreCartItems();
+  document.getElementsByClassName("cart-count")[0].textContent = items.length;
 }
 
 function openModal() {
@@ -42,6 +100,17 @@ function addItemHandler(e) {
   //validation
   if (!title || !price || !imageUrl || !desc) {
     alertBox("All fields are required");
+  }
+
+  //check that title does not exist already
+  //1. get store
+  const store = getStore();
+  const titleExist = store.find(
+    (product) => product.title.toLowerCase() === title.toLowerCase()
+  );
+  if (titleExist) {
+    alertBox("Product with title already exist");
+    return;
   }
 
   const item = {
@@ -99,7 +168,7 @@ function displayProductsToUI(products) {
     products.length > 0 &&
     products.forEach((product) => {
       const collectionItem = document.createElement("div");
-      collectionItem.className = "collection-item";
+      collectionItem.className = "collection-items";
       collectionItem.innerHTML = `
 
       <div style="width: 100%; height: 300px">
@@ -128,6 +197,12 @@ function getStore() {
     : [];
 }
 
+function getStoreCartItems() {
+  return localStorage.getItem("cart")
+    ? JSON.parse(localStorage.getItem("cart"))
+    : [];
+}
+
 function formatPrice(price) {
   const fomattedPrice = new Intl.NumberFormat(undefined, {
     style: "currency",
@@ -140,7 +215,7 @@ function formatPrice(price) {
 function alertBox(message, msgClass) {
   const bgColor = msgClass == "success" ? "green" : "red";
   const div = document.createElement("div");
-  div.style.position = "absolute";
+  div.style.position = "fixed";
   div.style.top = 0;
   div.style.right = 0;
   div.style.zIndex = 999;
