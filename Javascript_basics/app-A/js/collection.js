@@ -23,7 +23,7 @@ function ready() {
 
 function openModal() {
   const addModal = document.querySelector(".add-modal");
-  addModal.classList.add("open");
+  addModal.classList.add("open")
 }
 
 function closeModal() {

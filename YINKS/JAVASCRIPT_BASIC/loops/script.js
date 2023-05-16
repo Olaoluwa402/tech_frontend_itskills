@@ -110,4 +110,3 @@ const arrynumbers = (num) =>{
   console.log(newn);
   return newn;
 }
-
