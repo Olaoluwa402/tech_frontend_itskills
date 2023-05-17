@@ -1,3 +1,10 @@
+import {
+  alertBox,
+  displayNoOfItemsInCart,
+  getStoreCartItems,
+  formatPrice,
+} from "./common.js";
+
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", ready);
 } else {
@@ -43,13 +50,29 @@ function addToCartHandler(e) {
     "collection-items-price"
   )[0].textContent;
 
+  const imageUrl =
+    collectionItem.getElementsByClassName("collection-img")[0].src;
+
   const priceSymbolTrailingSpaceAndCommaRemoved = +price
     .slice(4, price.length - 3)
-    .replace(",", "");
+    .replace(/,/g, "");
+
+  //check that title does not exist already
+  //1. get acrt
+  const cart = getStoreCartItems();
+  console.log(cart);
+  const titleExist = cart.find(
+    (product) => product.title.toLowerCase() === title.toLowerCase()
+  );
+  if (titleExist) {
+    alertBox("Product with title already exist");
+    return;
+  }
 
   const cartItem = {
     title,
     price: priceSymbolTrailingSpaceAndCommaRemoved,
+    imageUrl,
     qty: 1,
   };
 
@@ -72,11 +95,6 @@ function addToCart(cartItem) {
   displayNoOfItemsInCart();
 
   alertBox("Item added to cart", "success");
-}
-
-function displayNoOfItemsInCart() {
-  const items = getStoreCartItems();
-  document.getElementsByClassName("cart-count")[0].textContent = items.length;
 }
 
 function openModal() {
@@ -131,6 +149,8 @@ function addItemHandler(e) {
 
   //close modal
   closeModal();
+
+  alertBox("Product added", "success");
 }
 
 function saveToStore(item) {
@@ -195,44 +215,4 @@ function getStore() {
   return localStorage.getItem("products")
     ? JSON.parse(localStorage.getItem("products"))
     : [];
-}
-
-function getStoreCartItems() {
-  return localStorage.getItem("cart")
-    ? JSON.parse(localStorage.getItem("cart"))
-    : [];
-}
-
-function formatPrice(price) {
-  const fomattedPrice = new Intl.NumberFormat(undefined, {
-    style: "currency",
-    currency: "NGN",
-  }).format(+price);
-
-  return fomattedPrice;
-}
-
-function alertBox(message, msgClass) {
-  const bgColor = msgClass == "success" ? "green" : "red";
-  const div = document.createElement("div");
-  div.style.position = "fixed";
-  div.style.top = 0;
-  div.style.right = 0;
-  div.style.zIndex = 999;
-  div.style.width = "200px";
-  div.style.height = "80px";
-  div.style.borderRadius = "5px";
-  div.style.backgroundColor = `${bgColor}`;
-  div.style.color = "#fff";
-  div.style.display = "flex";
-  div.style.alignItems = "center";
-  div.style.justifyContent = "center";
-  div.textContent = `${message}`;
-  const body = document.getElementsByTagName("body")[0];
-  body.appendChild(div);
-
-  //make the box disappear after 5sec
-  setTimeout(() => {
-    div.style.display = "none";
-  }, 5000);
 }
