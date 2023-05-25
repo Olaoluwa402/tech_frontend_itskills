@@ -21,6 +21,31 @@ function ready() {
 
   //show cart total
   displayCartTotal();
+
+  const deleteCartItemBtn = document.querySelectorAll(".cart-items-remove");
+  deleteCartItemBtn.forEach((btn) => {
+    btn.addEventListener("click", removeCartHandler);
+  });
+}
+
+function removeCartHandler(e) {
+  const title =
+    e.target.parentElement.parentElement.getElementsByClassName("cart-title")[0]
+      .textContent;
+
+  //get store and filter out cart item with the title
+  const store = getStoreCartItems();
+  const copy = [...store];
+
+  const newCartItems = copy.filter(
+    (item) => item.title.toLowerCase() !== title.toLowerCase()
+  );
+
+  //save update back to storage
+  localStorage.setItem("cart", JSON.stringify(newCartItems));
+
+  // displayCartItems();
+  location.reload();
 }
 
 //display cart items
@@ -51,7 +76,7 @@ function displayCartItemsToUI(cart) {
       <span class="cart-title">${product.title}</span>
     </td>
     <td class="cart-items-price">${product.price}</td>
-    <td class="cart-items-qty-container">
+    <td class="cart-items-qty-container"> 
       <input class="cart-items-qty" type="number" value=${product.qty} />
       <button class="btn cart-items-remove">REMOVE</button>
     </td>
