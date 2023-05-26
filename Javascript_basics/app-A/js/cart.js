@@ -26,6 +26,48 @@ function ready() {
   deleteCartItemBtn.forEach((btn) => {
     btn.addEventListener("click", removeCartHandler);
   });
+
+  const qtyInputBtn = document.querySelectorAll(".cart-items-qty");
+
+  qtyInputBtn.forEach((btn) => {
+    btn.addEventListener("change", incrementQtyHandler);
+  });
+}
+
+function incrementQtyHandler(e) {
+  const inputValue = e.target.value;
+  const title =
+    e.target.parentElement.parentElement.getElementsByClassName("cart-title")[0]
+      .textContent;
+
+  //check that value is not less than 1
+  if (+inputValue < 1) {
+    e.target.value = 1;
+    return;
+  }
+
+  //get cart fro store and look for the item to be updated using it's title
+  const cartItems = getStoreCartItems();
+
+  const copy = [...cartItems];
+
+  console.log(title, "title");
+  //find the index of the item first
+  const index = copy.findIndex(
+    (item) => item.title.toLowerCase() === title.toLowerCase()
+  );
+
+  //find item by the index
+  const foundCartItem = copy[index];
+
+  //update the old qty to the new qty
+  foundCartItem.qty = +inputValue;
+
+  //save the update
+  localStorage.setItem("cart", JSON.stringify(copy));
+
+  //call cartTotal
+  displayCartTotal();
 }
 
 function removeCartHandler(e) {
@@ -79,6 +121,8 @@ function displayCartItemsToUI(cart) {
     <td class="cart-items-qty-container"> 
       <input class="cart-items-qty" type="number" value=${product.qty} />
       <button class="btn cart-items-remove">REMOVE</button>
+
+      
     </td>
         
         `;
