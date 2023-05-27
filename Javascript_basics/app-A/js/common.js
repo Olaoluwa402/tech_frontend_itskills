@@ -48,9 +48,10 @@ function cartTotal() {
   const cart = getStoreCartItems();
 
   const total = cart
-    .map((product) => product.price)
+    .map((product) => product.price * product.qty)
     .reduce((acc, curPrice) => acc + curPrice, 0);
 
+  console.log(total, "total");
   return total;
 }
 
