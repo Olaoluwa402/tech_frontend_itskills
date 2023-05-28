@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer async src="./js/scripts.js"></script>
+    <title>OOP</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- dark mode button -->
+      <div class="light-mode-container">
+        <i class="fa fa-moon"></i>
+      </div>
+      <header class="header">
+        <h1 class="title">Book <i class="fa fa-book"></i> Lists</h1>
+        <img src="./images/header-img.webp" />
+      </header>
+
+      <div class="form-container">
+        <form class="form">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="input-title" />
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" class="author" />
+          </div>
+          <div class="form-group">
+            <label for="isbn">ISBN</label>
+            <input type="text" class="isbn" />
+          </div>
+
+          <button class="btn btn-submit">Submit</button>
+          <div class="btn-edit-actions">
+            <button class="btn btn-edit-submit" id="btn-edit-submit">
+              Edit
+            </button>
+            <button class="btn btn-edit-cancel" id="btn-edit-cancel">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="table-container">
+        <!-- search book -->
+        <input
+          class="search"
+          type="text"
+          placeholder="search book title or author"
+        />
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="book-lists"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
