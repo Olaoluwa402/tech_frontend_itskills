@@ -7,7 +7,7 @@ import { UI } from "./UI.js";
 //Events: document ready
 //Event : submit form data
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", UI.ready());
+  document.addEventListener("DOMContentLoaded", UI.ready);
 } else {
   UI.ready();
 }

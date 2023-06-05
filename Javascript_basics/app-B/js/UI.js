@@ -1,25 +1,62 @@
+import { Book } from "./Book.js";
 import { Store } from "./Store.js";
 //UI class
 export class UI {
   //ready state
   static ready() {
     //display books once the dom is ready
-    this.displayBooks();
+    UI.displayBooks();
     //Events: submit form data
     const submitFormDataBtn = document.getElementsByClassName("btn-submit")[0];
     submitFormDataBtn.addEventListener("click", UI.submitFormDataHandler);
 
     //Events: delete book
     const deleteBookBtn = document.getElementsByClassName("btn-delete")[0];
-    deleteBookBtn.addEventListener("click", UI.deleteBookHandler);
+    console.log(deleteBookBtn, "beleteBookBtn");
+    deleteBookBtn &&
+      deleteBookBtn.addEventListener("click", UI.deleteBookHandler);
 
     //Event: edit book
     const editBookBtn = document.getElementsByClassName("btn-edit")[0];
-    editBookBtn.addEventListener("click", UI.editBookHandler);
+    editBookBtn && editBookBtn.addEventListener("click", UI.editBookHandler);
 
     //Event: cancel edit book
     const cancelEditBookBtn = document.getElementById("btn-edit-cancel");
-    cancelEditBookBtn.addEventListener("click", UI.cancelEditBookHandler);
+    cancelEditBookBtn &&
+      cancelEditBookBtn.addEventListener("click", UI.cancelEditBookHandler);
+
+    //Event: Update Book
+    const updateBookBtn = document.getElementById("btn-edit-submit");
+    updateBookBtn &&
+      updateBookBtn.addEventListener("click", UI.updateBookHandler);
+  }
+
+  static updateBookHandler(e) {
+    const title = document.getElementsByClassName("input-title")[0].value;
+    const author = document.getElementsByClassName("author")[0].value;
+    const isbn = document.getElementsByClassName("isbn")[0].value;
+
+    //updateBook
+    UI.updateBook(title, author, isbn);
+  }
+
+  static updateBook(title, author, isbn) {
+    //get books from store
+    const books = Store.getBooks();
+
+    const copy = [...books];
+    const index = copy.findIndex((book) => book.isbn == isbn);
+
+    //foundBook
+    const foundBook = copy[index];
+    //update record
+    foundBook.title = title ? title : foundBook.title;
+    foundBook.author = author ? author : foundBook.author;
+
+    localStorage.setItem("books", JSON.stringify(copy));
+
+    UI.displayBooks();
+    UI.alertBox("Update successfully", "success");
   }
 
   static cancelEditBookHandler(e) {
@@ -29,6 +66,16 @@ export class UI {
     document
       .getElementsByClassName("btn-edit-actions")[0]
       .classList.remove("show");
+
+    //cancelFormField
+    UI.cancelFormField();
+    document.getElementsByClassName("isbn")[0].disabled = "false";
+  }
+
+  static cancelFormField() {
+    document.getElementsByClassName("input-title")[0].value = "";
+    document.getElementsByClassName("author")[0].value = "";
+    document.getElementsByClassName("isbn")[0].value = "";
   }
 
   static editBookHandler(e) {
@@ -37,9 +84,25 @@ export class UI {
     document
       .getElementsByClassName("btn-edit-actions")[0]
       .classList.add("show");
+
+    //populate the form field to reflect the "to be edited table row fields"
+    UI.transferTableRecordToFormField(e);
+  }
+
+  static transferTableRecordToFormField(e) {
+    const tr = e.target.parentElement.parentElement;
+    const title = tr.getElementsByClassName("book-title")[0].textContent;
+    const author = tr.getElementsByClassName("book-author")[0].textContent;
+    const isbn = tr.getElementsByClassName("book-isbn")[0].textContent;
+
+    document.getElementsByClassName("input-title")[0].value = title;
+    document.getElementsByClassName("author")[0].value = author;
+    document.getElementsByClassName("isbn")[0].value = isbn;
+    document.getElementsByClassName("isbn")[0].disabled = "true";
   }
 
   static deleteBookHandler(e) {
+    console.log("delete");
     const grandParent = e.target.parentElement.parentElement;
     const isbn = grandParent.getElementsByClassName("book-isbn")[0].textContent;
     UI.removeBookWwithISBN(+isbn);
@@ -69,14 +132,20 @@ export class UI {
     copy.forEach((element) => {
       const tr = document.createElement("tr");
       tr.innerHTML = `
-                <td>${element.title}</td>
-                <td>${element.author}</td>
+                <td class='book-title'>${element.title}</td>
+                <td class='book-author'>${element.author}</td>
                 <td class='book-isbn'>${element.isbn}</td>
                 <td>
                    <span class="btn btn-actions btn-edit">EDIT</span>
                    <span class="btn btn-actions btn-delete">DELETE</span>
                 </td>
           `;
+
+      const deleteBookBtn = tr.getElementsByClassName("btn-delete")[0];
+      deleteBookBtn.addEventListener("click", UI.deleteBookHandler);
+
+      const editBookBtn = tr.getElementsByClassName("btn-edit")[0];
+      editBookBtn.addEventListener("click", UI.editBookHandler);
       bookLists.appendChild(tr);
     });
   }
@@ -107,30 +176,25 @@ export class UI {
       return;
     }
 
-    //check if title or isbn already exist
-    const titleExistError = UI.titleOrIsbnExist(title, isbn);
-    //error handling
-    if (titleExistError === "error") {
-      UI.alertBox("Book with Title or isbn already exist");
-      return;
-    }
+    // //check if title or isbn already exist
+    // const titleExistError = UI.titleOrIsbnExist(title, isbn);
+    // //error handling
+    // if (titleExistError === "error") {
+    //   UI.alertBox("Book with Title or isbn already exist");
+    //   return;
+    // }
 
     //structure collected data into object
-    const data = {
-      id: author + "-" + isbn,
-      title,
-      author,
-      isbn,
-    };
-    console.log(data, "book");
+    const id = author + "-" + isbn;
+    const book = new Book(id, title, author, isbn);
+
+    console.log(book, "book");
 
     //save book to store
-    Store.saveBookToStore(data);
+    Store.saveBookToStore(book);
 
     //clear input field
-    document.getElementsByClassName("input-title")[0].value = "";
-    document.getElementsByClassName("author")[0].value = "";
-    document.getElementsByClassName("isbn")[0].value = "";
+    UI.cancelFormField();
 
     //alert success message
     UI.alertBox("Book created successfully", "success");
