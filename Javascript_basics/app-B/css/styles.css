@@ -5,6 +5,7 @@
   --lightdark: rgba(0, 0, 0, 0.6);
   --light: #fff;
   --primary: #d789dd;
+  --primary-100: #756676;
   --danger: rgb(186, 13, 13);
   --foreground: var(--light);
   --background: var(--dark);
@@ -119,8 +120,6 @@ header img {
   color: var(--light);
 }
 
-
-
 .btn-submit.hide {
   display: none;
 }
@@ -166,7 +165,7 @@ header img {
 
 .table-container table th,
 .table-container table td {
-  padding: 10px 15px;
+  padding: 20px 30px;
   border: 2px solid var(--primary);
 }
 
@@ -197,10 +196,19 @@ header img {
 }
 
 .btn-edit {
+  margin-right: 10px;
   background-color: var(--primary);
+}
+
+.btn-edit:hover {
+  background-color: var(--primary-100);
 }
 .btn-delete {
   background-color: var(--danger);
+}
+
+.btn-delete:hover {
+  background-color: var(--primary);
 }
 
 @media (max-width: 520px) {

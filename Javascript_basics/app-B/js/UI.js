@@ -3,9 +3,82 @@ import { Store } from "./Store.js";
 export class UI {
   //ready state
   static ready() {
+    //display books once the dom is ready
+    this.displayBooks();
     //Events: submit form data
     const submitFormDataBtn = document.getElementsByClassName("btn-submit")[0];
     submitFormDataBtn.addEventListener("click", UI.submitFormDataHandler);
+
+    //Events: delete book
+    const deleteBookBtn = document.getElementsByClassName("btn-delete")[0];
+    deleteBookBtn.addEventListener("click", UI.deleteBookHandler);
+
+    //Event: edit book
+    const editBookBtn = document.getElementsByClassName("btn-edit")[0];
+    editBookBtn.addEventListener("click", UI.editBookHandler);
+
+    //Event: cancel edit book
+    const cancelEditBookBtn = document.getElementById("btn-edit-cancel");
+    cancelEditBookBtn.addEventListener("click", UI.cancelEditBookHandler);
+  }
+
+  static cancelEditBookHandler(e) {
+    e.preventDefault();
+    //flip the submit button to update button
+    document.getElementsByClassName("btn-submit")[0].classList.remove("hide");
+    document
+      .getElementsByClassName("btn-edit-actions")[0]
+      .classList.remove("show");
+  }
+
+  static editBookHandler(e) {
+    //flip the submit button to update button
+    document.getElementsByClassName("btn-submit")[0].classList.add("hide");
+    document
+      .getElementsByClassName("btn-edit-actions")[0]
+      .classList.add("show");
+  }
+
+  static deleteBookHandler(e) {
+    const grandParent = e.target.parentElement.parentElement;
+    const isbn = grandParent.getElementsByClassName("book-isbn")[0].textContent;
+    UI.removeBookWwithISBN(+isbn);
+  }
+
+  static removeBookWwithISBN(isbn) {
+    //get books from store
+    const books = Store.getBooks();
+
+    const copy = books.slice();
+    const filteredBooks = copy.filter((book) => book.isbn != isbn);
+
+    //save update
+    localStorage.setItem("books", JSON.stringify(filteredBooks));
+
+    //display update
+    // UI.displayBooks();
+    location.reload();
+  }
+
+  static displayBooks() {
+    //get books from store
+    const books = Store.getBooks();
+    const copy = [...books];
+    const bookLists = document.getElementsByClassName("book-lists")[0];
+    bookLists.innerHTML = "";
+    copy.forEach((element) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+                <td>${element.title}</td>
+                <td>${element.author}</td>
+                <td class='book-isbn'>${element.isbn}</td>
+                <td>
+                   <span class="btn btn-actions btn-edit">EDIT</span>
+                   <span class="btn btn-actions btn-delete">DELETE</span>
+                </td>
+          `;
+      bookLists.appendChild(tr);
+    });
   }
 
   static submitFormDataHandler(e) {
@@ -19,7 +92,7 @@ export class UI {
 
     //perform validation to ensure all fields are supplied
     if (!title || !author || !isbn) {
-      UI.alertBox("All fields are required");
+      this.alertBox("All fields are required");
       return;
     }
 
@@ -61,6 +134,9 @@ export class UI {
 
     //alert success message
     UI.alertBox("Book created successfully", "success");
+
+    //display updates
+    UI.displayBooks();
   }
 
   static isbnIsDigit(isbn) {
