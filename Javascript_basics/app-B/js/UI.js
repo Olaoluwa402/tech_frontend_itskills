@@ -29,6 +29,33 @@ export class UI {
     const updateBookBtn = document.getElementById("btn-edit-submit");
     updateBookBtn &&
       updateBookBtn.addEventListener("click", UI.updateBookHandler);
+
+    //Event : search
+    const searchInput = document.getElementsByClassName("search")[0];
+    searchInput.addEventListener("blur", UI.searchHandler);
+
+    //Event: light mode
+    const lightModeBtn = document.getElementsByClassName(
+      "light-mode-container"
+    )[0];
+
+    //Event: light mode
+    const lightModeMonnIcon = document.getElementsByClassName("fa-moon")[0];
+
+    lightModeMonnIcon.addEventListener("click", UI.toggleLightMode);
+    lightModeBtn.addEventListener("click", UI.toggleLightMode);
+  }
+
+  static toggleLightMode(e) {
+    console.log("toggel");
+    e.target.classList.toggle("light-mode-switch");
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.toggle("lightModeEnabled");
+  }
+
+  static searchHandler(e) {
+    const search = e.target.value;
+    UI.displayBooks(search);
   }
 
   static updateBookHandler(e) {
@@ -123,10 +150,19 @@ export class UI {
     location.reload();
   }
 
-  static displayBooks() {
+  static displayBooks(search = null) {
     //get books from store
     const books = Store.getBooks();
-    const copy = [...books];
+    let copy = [...books];
+
+    if (search) {
+      copy = copy.filter(
+        (book) =>
+          book.title.toLowerCase().startsWith(search.toLowerCase()) ||
+          book.author.toLowerCase().startsWith(search.toLowerCase()) ||
+          book.isbn == search
+      );
+    }
     const bookLists = document.getElementsByClassName("book-lists")[0];
     bookLists.innerHTML = "";
     copy.forEach((element) => {
