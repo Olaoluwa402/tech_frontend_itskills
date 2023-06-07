@@ -41,10 +41,10 @@ body {
   border-radius: 3px;
 }
 
-.light-mode-switch {
+.light-mode-switch { 
   justify-content: flex-end;
   color: #dc3a19;
-}
+} 
 
 .light-mode-container .fa-moon {
   font-size: 1.5rem;
