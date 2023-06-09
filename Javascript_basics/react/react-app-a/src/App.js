@@ -1,12 +1,12 @@
-import Banner from "./components/banner/banner";
+import HomeScreen from "./screens/Home/HomeScreen";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <h1>Hello Devs</h1>
-      {/* Banner component */}
-      <Banner />
+      {/* Home Screen */}
+      <HomeScreen />
     </div>
   );
 }
