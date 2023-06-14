@@ -4,6 +4,7 @@ import CustomCardOne from "../../components/CustomCardOne/CustomCardOne";
 import { FaUserAlt } from "react-icons/fa";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import Card from "../../components/Card/Card";
+import Video from "../../components/Videos/Video";
 
 import styles from "./HomeScreen.module.css";
 
@@ -36,7 +37,8 @@ const HomeScreen = () => {
         </CustomCardOne>
       </section>
 
-      {/* <Banner /> */}
+      {/* Video */}
+      <Video />
     </div>
   );
 };
