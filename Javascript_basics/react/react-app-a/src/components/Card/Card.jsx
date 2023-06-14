@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Card.module.css";
 
-const Card = ({ title, description, icon, imgUrl }) => {
+const Card = ({ title, description, icon, imgUrl, style }) => {
   return (
     <div className={styles.container}>
       <div className={styles.cardImageContainer}>

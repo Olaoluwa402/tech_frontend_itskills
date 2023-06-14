@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 10px;
+  margin: 50px 0;
+}
+
+@media (min-width: 980px) {
+  .container {
+    flex-direction: row;
+  }
+}
