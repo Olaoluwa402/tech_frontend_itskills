@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  gap: 10px;
+  margin: 50px 0;
+}
+
+.video_pane {
+  background-color: blue;
+  flex: 1;
+  min-height: 200px;
+}
+
+.video_list {
+  flex: 1;
+  border-radius: 15px;
+  border: 1px solid #c6d4e5;
+  padding: 10px;
+}
+
+.video_list h4 {
+  margin: 0;
+  padding: 0;
+}

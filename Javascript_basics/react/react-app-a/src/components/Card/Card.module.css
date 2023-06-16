@@ -3,7 +3,7 @@
   height: 100px;
   border-radius: 15px;
   background-color: #fff;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9); */
   padding: 20px;
   display: flex;
   align-items: center;
