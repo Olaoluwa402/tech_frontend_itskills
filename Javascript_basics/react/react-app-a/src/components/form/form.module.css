@@ -1,0 +1,50 @@
+.container {
+  margin: 100px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.formWrapper {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: blueviolet;
+  border-radius: 15px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formGroup input,
+.formGroup label {
+  width: 100%;
+  padding: 10px;
+}
+
+.formGroup label {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+@media (min-width: 580px) {
+  .formWrapper {
+    width: 60%;
+  }
+}
+
+@media (min-width: 780px) {
+  .container {
+    padding: 50px;
+  }
+
+  .formWrapper {
+    width: 40%;
+  }
+}
