@@ -5,7 +5,7 @@ const Card = ({ title, description, icon, imgUrl, style }) => {
   return (
     <div className={styles.container}>
       <div className={styles.cardImageContainer}>
-        <img src={imgUrl} alt="image" />
+        <img src={imgUrl} alt="card" />
       </div>
       <div className={styles.cardBody}>
         <h4>{title}</h4>
