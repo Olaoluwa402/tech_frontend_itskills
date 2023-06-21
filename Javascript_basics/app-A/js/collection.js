@@ -76,6 +76,8 @@ function addToCartHandler(e) {
     qty: 1,
   };
 
+  
+
   addToCart(cartItem);
 }
 
