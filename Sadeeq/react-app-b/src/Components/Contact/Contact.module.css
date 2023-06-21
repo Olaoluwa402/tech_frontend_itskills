@@ -1,0 +1,27 @@
+.phone, .zip {
+    display: flex;
+    gap: 19px;
+}
+
+.checkbox > label {
+    color: white;
+}
+
+.checkbox > label > a {
+    color: white;
+}
+
+.button > button {
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    width: 120px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 30px;
+}

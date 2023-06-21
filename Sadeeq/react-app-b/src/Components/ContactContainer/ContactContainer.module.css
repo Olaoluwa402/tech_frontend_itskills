@@ -1,0 +1,10 @@
+.container {
+    width: 100%;
+    height: 500px;
+
+    background-color: #463acb;
+
+    display: flex;
+    justify-content: center;
+}
+
