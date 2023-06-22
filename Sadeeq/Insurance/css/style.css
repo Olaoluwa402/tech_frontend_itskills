@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+
+    background-color: #01539d;
+    height: 50px;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* font-size: 9px; */
+}
+
+.hero {
+    position: relative;
+    background-image: url(../images/woman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    /* text-align: center; */
+    padding: 30px auto;
+}
+
+/* .topquotation {
+    width: 80px;
+} */
+
+form {
+    width: 310px;
+    height: 250px;
+    border: 2px solid black;
+    padding: 20px 0;
+    margin: 20px auto;
+
+    /* background-color: transparent; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.quotation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form > p{
+    font-size: 20px;
+    color: #01539d;
+}
+
+select, .zipcode {
+    width: 143px;
+    height: 30px;
+    border-radius: 0;
+    margin: 20px 0;
+    border: none;
+}
+
+.get {
+    width: 143px;
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #ca0607;
+    border: none;
+    margin-left: 10px;
+}
+
+.rating {
+    color: #01539d;
+}
+
+
+@media (min-width: 560px) {
+    header {
+        font-size: 14px;
+    }
+
+    .quotation {
+        position: absolute;
+        /* right: 0; */
+    }
+}

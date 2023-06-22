@@ -1,9 +1,18 @@
 import styles from "./Button.module.css";
 
-const Button = ({ color, name, bg, borderRadius, fontSize, icon }) => {
+const Button = ({
+  color,
+  name,
+  bg,
+  borderRadius,
+  fontSize,
+  icon,
+  submitHandler,
+}) => {
   return (
     <div>
       <button
+        onClick={(e) => submitHandler(e)}
         style={{
           color: color ? color : "blue",
           backgroundColor: bg ? bg : "black",
