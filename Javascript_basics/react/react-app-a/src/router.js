@@ -2,6 +2,8 @@ import HomeScreen from "./screens/Home/HomeScreen";
 import AboutScreen from "./screens/About/AboutScreen";
 import NotFoundScreen from "./screens/NotFound/NotFound";
 import ContactScreen from "./screens/Contact/ContactScreen";
+import PhotosScreen from "./screens/Photos/PhotosScreen";
+import SinglePhotoScreen from "./screens/SinglePhotoScreen/SinglePhotoScreen";
 import Template from "./components/Template/Template/Template";
 import { Route, Routes, Navigate, NavLink } from "react-router-dom";
 import "./App.css";
@@ -41,6 +43,25 @@ const Router = () => {
             </Template>
           }
         />
+
+        <Route
+          path="/photos"
+          element={
+            <Template>
+              <PhotosScreen />
+            </Template>
+          }
+        />
+
+        <Route
+          path="/photos/:id"
+          element={
+            <Template>
+              <SinglePhotoScreen />
+            </Template>
+          }
+        />
+
         <Route
           path="/contact"
           element={
